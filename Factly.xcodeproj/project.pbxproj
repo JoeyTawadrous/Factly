@@ -1,0 +1,382 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5265BE691E339C580007CDCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5265BE681E339C580007CDCD /* AppDelegate.swift */; };
+		5265BE6B1E339C580007CDCD /* Fact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5265BE6A1E339C580007CDCD /* Fact.swift */; };
+		5265BE6E1E339C580007CDCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5265BE6C1E339C580007CDCD /* Main.storyboard */; };
+		5265BE701E339C580007CDCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5265BE6F1E339C580007CDCD /* Assets.xcassets */; };
+		5265BE731E339C580007CDCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5265BE711E339C580007CDCD /* LaunchScreen.storyboard */; };
+		5265BE7D1E33AD210007CDCD /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5265BE7C1E33AD210007CDCD /* Utils.swift */; };
+		5265BE7F1E33AD460007CDCD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5265BE7E1E33AD460007CDCD /* Constants.swift */; };
+		5265BE811E33AEA30007CDCD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5265BE801E33AEA30007CDCD /* Extensions.swift */; };
+		5265BE8C1E33AF150007CDCD /* GothamProBlack.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5265BE831E33AF150007CDCD /* GothamProBlack.ttf */; };
+		5265BE8D1E33AF150007CDCD /* GothamProBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5265BE841E33AF150007CDCD /* GothamProBold.ttf */; };
+		5265BE8E1E33AF150007CDCD /* GothamProMedium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5265BE851E33AF150007CDCD /* GothamProMedium.ttf */; };
+		5265BE8F1E33AF150007CDCD /* GothamProRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5265BE861E33AF150007CDCD /* GothamProRegular.ttf */; };
+		5265BE901E33AF150007CDCD /* impact.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5265BE871E33AF150007CDCD /* impact.ttf */; };
+		5265BE911E33AF150007CDCD /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5265BE881E33AF150007CDCD /* Nunito-Bold.ttf */; };
+		5265BE921E33AF150007CDCD /* Nunito-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5265BE891E33AF150007CDCD /* Nunito-Light.ttf */; };
+		5265BE931E33AF150007CDCD /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5265BE8A1E33AF150007CDCD /* Nunito-Regular.ttf */; };
+		5265BE941E33AF150007CDCD /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5265BE8B1E33AF150007CDCD /* OpenSans-Regular.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5265BE651E339C580007CDCD /* Factly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Factly.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5265BE681E339C580007CDCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5265BE6A1E339C580007CDCD /* Fact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fact.swift; sourceTree = "<group>"; };
+		5265BE6D1E339C580007CDCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5265BE6F1E339C580007CDCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5265BE721E339C580007CDCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5265BE741E339C580007CDCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5265BE7C1E33AD210007CDCD /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		5265BE7E1E33AD460007CDCD /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5265BE801E33AEA30007CDCD /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		5265BE831E33AF150007CDCD /* GothamProBlack.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamProBlack.ttf; sourceTree = "<group>"; };
+		5265BE841E33AF150007CDCD /* GothamProBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamProBold.ttf; sourceTree = "<group>"; };
+		5265BE851E33AF150007CDCD /* GothamProMedium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamProMedium.ttf; sourceTree = "<group>"; };
+		5265BE861E33AF150007CDCD /* GothamProRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamProRegular.ttf; sourceTree = "<group>"; };
+		5265BE871E33AF150007CDCD /* impact.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = impact.ttf; sourceTree = "<group>"; };
+		5265BE881E33AF150007CDCD /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
+		5265BE891E33AF150007CDCD /* Nunito-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Light.ttf"; sourceTree = "<group>"; };
+		5265BE8A1E33AF150007CDCD /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
+		5265BE8B1E33AF150007CDCD /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5265BE621E339C580007CDCD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5265BE5C1E339C570007CDCD = {
+			isa = PBXGroup;
+			children = (
+				5265BE671E339C580007CDCD /* Factly */,
+				5265BE661E339C580007CDCD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5265BE661E339C580007CDCD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5265BE651E339C580007CDCD /* Factly.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5265BE671E339C580007CDCD /* Factly */ = {
+			isa = PBXGroup;
+			children = (
+				5265BE681E339C580007CDCD /* AppDelegate.swift */,
+				5265BE6A1E339C580007CDCD /* Fact.swift */,
+				5265BE6C1E339C580007CDCD /* Main.storyboard */,
+				5265BE7B1E33AD150007CDCD /* Utils */,
+				5265BE7A1E33AD0B0007CDCD /* Resources */,
+			);
+			path = Factly;
+			sourceTree = "<group>";
+		};
+		5265BE7A1E33AD0B0007CDCD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5265BE821E33AEFD0007CDCD /* Fonts */,
+				5265BE6F1E339C580007CDCD /* Assets.xcassets */,
+				5265BE711E339C580007CDCD /* LaunchScreen.storyboard */,
+				5265BE741E339C580007CDCD /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		5265BE7B1E33AD150007CDCD /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5265BE7E1E33AD460007CDCD /* Constants.swift */,
+				5265BE801E33AEA30007CDCD /* Extensions.swift */,
+				5265BE7C1E33AD210007CDCD /* Utils.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		5265BE821E33AEFD0007CDCD /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				5265BE831E33AF150007CDCD /* GothamProBlack.ttf */,
+				5265BE841E33AF150007CDCD /* GothamProBold.ttf */,
+				5265BE851E33AF150007CDCD /* GothamProMedium.ttf */,
+				5265BE861E33AF150007CDCD /* GothamProRegular.ttf */,
+				5265BE871E33AF150007CDCD /* impact.ttf */,
+				5265BE881E33AF150007CDCD /* Nunito-Bold.ttf */,
+				5265BE891E33AF150007CDCD /* Nunito-Light.ttf */,
+				5265BE8A1E33AF150007CDCD /* Nunito-Regular.ttf */,
+				5265BE8B1E33AF150007CDCD /* OpenSans-Regular.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5265BE641E339C580007CDCD /* Factly */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5265BE771E339C580007CDCD /* Build configuration list for PBXNativeTarget "Factly" */;
+			buildPhases = (
+				5265BE611E339C580007CDCD /* Sources */,
+				5265BE621E339C580007CDCD /* Frameworks */,
+				5265BE631E339C580007CDCD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Factly;
+			productName = Factly;
+			productReference = 5265BE651E339C580007CDCD /* Factly.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5265BE5D1E339C570007CDCD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Joey Tawadrous";
+				TargetAttributes = {
+					5265BE641E339C580007CDCD = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = P5Z7RL76WF;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 5265BE601E339C570007CDCD /* Build configuration list for PBXProject "Factly" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5265BE5C1E339C570007CDCD;
+			productRefGroup = 5265BE661E339C580007CDCD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5265BE641E339C580007CDCD /* Factly */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5265BE631E339C580007CDCD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5265BE931E33AF150007CDCD /* Nunito-Regular.ttf in Resources */,
+				5265BE8C1E33AF150007CDCD /* GothamProBlack.ttf in Resources */,
+				5265BE8F1E33AF150007CDCD /* GothamProRegular.ttf in Resources */,
+				5265BE8D1E33AF150007CDCD /* GothamProBold.ttf in Resources */,
+				5265BE731E339C580007CDCD /* LaunchScreen.storyboard in Resources */,
+				5265BE911E33AF150007CDCD /* Nunito-Bold.ttf in Resources */,
+				5265BE901E33AF150007CDCD /* impact.ttf in Resources */,
+				5265BE921E33AF150007CDCD /* Nunito-Light.ttf in Resources */,
+				5265BE701E339C580007CDCD /* Assets.xcassets in Resources */,
+				5265BE6E1E339C580007CDCD /* Main.storyboard in Resources */,
+				5265BE941E33AF150007CDCD /* OpenSans-Regular.ttf in Resources */,
+				5265BE8E1E33AF150007CDCD /* GothamProMedium.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5265BE611E339C580007CDCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5265BE811E33AEA30007CDCD /* Extensions.swift in Sources */,
+				5265BE6B1E339C580007CDCD /* Fact.swift in Sources */,
+				5265BE691E339C580007CDCD /* AppDelegate.swift in Sources */,
+				5265BE7D1E33AD210007CDCD /* Utils.swift in Sources */,
+				5265BE7F1E33AD460007CDCD /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5265BE6C1E339C580007CDCD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5265BE6D1E339C580007CDCD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5265BE711E339C580007CDCD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5265BE721E339C580007CDCD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5265BE751E339C580007CDCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5265BE761E339C580007CDCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5265BE781E339C580007CDCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = P5Z7RL76WF;
+				INFOPLIST_FILE = Factly/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.joeyt.factly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		5265BE791E339C580007CDCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = P5Z7RL76WF;
+				INFOPLIST_FILE = Factly/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.joeyt.factly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5265BE601E339C570007CDCD /* Build configuration list for PBXProject "Factly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5265BE751E339C580007CDCD /* Debug */,
+				5265BE761E339C580007CDCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5265BE771E339C580007CDCD /* Build configuration list for PBXNativeTarget "Factly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5265BE781E339C580007CDCD /* Debug */,
+				5265BE791E339C580007CDCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5265BE5D1E339C570007CDCD /* Project object */;
+}

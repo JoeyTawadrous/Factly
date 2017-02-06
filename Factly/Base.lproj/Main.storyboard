@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GothamProBold.ttf">
+            <string>GothamPro-Bold</string>
+        </array>
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Fact-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="Fact" id="BYZ-38-t0r" customClass="Fact" customModule="Factly" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="asteroids" translatesAutoresizingMaskIntoConstraints="NO" id="tbc-O1-IxA">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please wait while we fetch another great fact for you.." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vTK-pM-4DO">
+                                <rect key="frame" x="27" y="94" width="320" height="338"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="338" id="LcE-KJ-xjR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cqw-aI-qW3" customClass="RoundButton" customModule="Factly" customModuleProvider="target">
+                                <rect key="frame" x="163" y="491" width="48" height="48"/>
+                                <color key="backgroundColor" red="0.18823529411764706" green="0.20000000000000001" blue="0.2196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="3ir-JM-2gJ"/>
+                                    <constraint firstAttribute="height" constant="48" id="qud-fO-yHO"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="shareToFacebookButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="plq-Km-IZp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Gk-fx-wKH" customClass="RoundButton" customModule="Factly" customModuleProvider="target">
+                                <rect key="frame" x="258" y="491" width="48" height="48"/>
+                                <color key="backgroundColor" red="0.18823529410000001" green="0.20000000000000001" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="afe-Jj-0D8"/>
+                                    <constraint firstAttribute="width" constant="48" id="rLC-gY-tUj"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="shareButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RhS-Uh-rHv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FBt-GA-Wzn" customClass="RoundButton" customModule="Factly" customModuleProvider="target">
+                                <rect key="frame" x="68" y="491" width="48" height="48"/>
+                                <color key="backgroundColor" red="0.18823529410000001" green="0.20000000000000001" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="2Z4-5u-P5O"/>
+                                    <constraint firstAttribute="width" constant="48" id="ioI-qW-33n"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="shareToTwitterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZKn-zZ-Ciw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Factly" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QE2-eP-Mkq">
+                                <rect key="frame" x="97" y="20" width="181" height="46"/>
+                                <fontDescription key="fontDescription" name="GothamPro-Bold" family="Gotham Pro" pointSize="23"/>
+                                <color key="textColor" red="0.96470588235294119" green="0.84313725490196079" blue="0.41176470588235292" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QE2-eP-Mkq" firstAttribute="centerX" secondItem="vTK-pM-4DO" secondAttribute="centerX" id="04F-5K-3Iw"/>
+                            <constraint firstItem="QE2-eP-Mkq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="2S4-4J-57n"/>
+                            <constraint firstItem="Cqw-aI-qW3" firstAttribute="top" secondItem="vTK-pM-4DO" secondAttribute="bottom" constant="59" id="2bd-G5-NcH"/>
+                            <constraint firstItem="tbc-O1-IxA" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="4jP-5n-j4I"/>
+                            <constraint firstItem="tbc-O1-IxA" firstAttribute="centerX" secondItem="vTK-pM-4DO" secondAttribute="centerX" id="7LO-nk-etP"/>
+                            <constraint firstItem="tbc-O1-IxA" firstAttribute="centerX" secondItem="Cqw-aI-qW3" secondAttribute="centerX" id="DgL-bd-2yr"/>
+                            <constraint firstItem="FBt-GA-Wzn" firstAttribute="top" secondItem="vTK-pM-4DO" secondAttribute="bottom" constant="59" id="FzA-dL-S1C"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1Gk-fx-wKH" secondAttribute="bottom" constant="128" id="HW8-Hw-LKT"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Cqw-aI-qW3" secondAttribute="bottom" constant="128" id="Kf6-tQ-XY4"/>
+                            <constraint firstItem="QE2-eP-Mkq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="81" id="PbU-2x-Zxm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1Gk-fx-wKH" secondAttribute="trailing" constant="53" id="YIW-Sx-A52"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FBt-GA-Wzn" secondAttribute="bottom" constant="128" id="Z5y-l1-Ava"/>
+                            <constraint firstAttribute="trailing" secondItem="tbc-O1-IxA" secondAttribute="trailing" id="aZx-DB-R3F"/>
+                            <constraint firstItem="vTK-pM-4DO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="74" id="iR2-qQ-8K3"/>
+                            <constraint firstItem="tbc-O1-IxA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="lKB-dx-2Hp"/>
+                            <constraint firstItem="vTK-pM-4DO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="11" id="mWH-X5-ak0"/>
+                            <constraint firstItem="1Gk-fx-wKH" firstAttribute="top" secondItem="vTK-pM-4DO" secondAttribute="bottom" constant="59" id="nXa-KM-ig0"/>
+                            <constraint firstItem="tbc-O1-IxA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="q7o-g0-8Ms"/>
+                            <constraint firstItem="vTK-pM-4DO" firstAttribute="top" secondItem="QE2-eP-Mkq" secondAttribute="bottom" constant="28" id="svB-72-BjQ"/>
+                            <constraint firstItem="FBt-GA-Wzn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="52" id="uax-ZX-vQl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="appNameLabel" destination="QE2-eP-Mkq" id="sqs-7X-Eoo"/>
+                        <outlet property="bgImageView" destination="tbc-O1-IxA" id="eib-DQ-9Jy"/>
+                        <outlet property="facebookButton" destination="Cqw-aI-qW3" id="yss-SX-p4g"/>
+                        <outlet property="questionAndAnswerLabel" destination="vTK-pM-4DO" id="iHZ-yF-B3r"/>
+                        <outlet property="shareButton" destination="1Gk-fx-wKH" id="SVh-HR-FsS"/>
+                        <outlet property="twitterButton" destination="FBt-GA-Wzn" id="x8Y-hU-9vL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="asteroids" width="802" height="1200"/>
+    </resources>
+</document>
