@@ -1,4 +1,4 @@
-# Tasky Open Source iOS App (Habits, Goals & Tasks To-Do List Tracker)
+# Factly Open Source iOS App (Factly - Learn New Facts Every Day)
 
 Learn something new on your train ride, coffee break or when you visit the loo!
 
@@ -9,8 +9,8 @@ Learn something new on your train ride, coffee break or when you visit the loo!
 
 
 # Broad Features
-# Useful fact every day
-# Shareable on social networks
+* Useful fact every day
+* Shareable on social networks
 * Tons of fact topics! Always be surprised!
 * Beautiful design
 * Become smarter as you improve your mind & memory
@@ -21,10 +21,10 @@ Learn something new on your train ride, coffee break or when you visit the loo!
 * Local notifications
 
 
-# Tags
-fact, quote, academic, life, goals, mind, learn, remember, facts, school, quiz, quizup, brain, peak, memory, more
-
-
 <img alt="Screenshot" width="205px" src="readme-assets/1.png">
 <img alt="Screenshot2" width="205px" src="readme-assets/2.png">
 <img alt="Screenshot3" width="205px" src="readme-assets/3.png">
+
+
+# Tags
+fact, quote, academic, life, goals, mind, learn, remember, facts, school, quiz, quizup, brain, peak, memory, more
