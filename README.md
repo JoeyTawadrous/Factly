@@ -1,4 +1,4 @@
-# Factly Open Source iOS App (Factly - Learn New Facts Every Day)
+# Factly Open Source iOS App (Learn New Facts Every Day)
 
 Learn something new on your train ride, coffee break or when you visit the loo!
 
