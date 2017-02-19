@@ -112,6 +112,12 @@ class Fact: UIViewController {
 		
 		
 		self.questionAndAnswerLabel?.attributedText = attributedString
+		
+		
+		// show buttons
+		facebookButton?.isHidden = false
+		twitterButton?.isHidden = false
+		shareButton?.isHidden = false
 	}
 }
 

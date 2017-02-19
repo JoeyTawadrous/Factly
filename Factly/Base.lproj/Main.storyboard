@@ -33,7 +33,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="asteroids" translatesAutoresizingMaskIntoConstraints="NO" id="tbc-O1-IxA">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please wait while we fetch another great fact for you.." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vTK-pM-4DO">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In Shakespeare's play Julius Caesar, Caesar's last words were... Et tu, Brute?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vTK-pM-4DO">
                                 <rect key="frame" x="27" y="94" width="320" height="338"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="338" id="LcE-KJ-xjR"/>
@@ -42,7 +42,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cqw-aI-qW3" customClass="RoundButton" customModule="Factly" customModuleProvider="target">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cqw-aI-qW3" customClass="RoundButton" customModule="Factly" customModuleProvider="target">
                                 <rect key="frame" x="163" y="491" width="48" height="48"/>
                                 <color key="backgroundColor" red="0.18823529411764706" green="0.20000000000000001" blue="0.2196078431372549" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -54,7 +54,7 @@
                                     <action selector="shareToFacebookButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="plq-Km-IZp"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Gk-fx-wKH" customClass="RoundButton" customModule="Factly" customModuleProvider="target">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Gk-fx-wKH" customClass="RoundButton" customModule="Factly" customModuleProvider="target">
                                 <rect key="frame" x="258" y="491" width="48" height="48"/>
                                 <color key="backgroundColor" red="0.18823529410000001" green="0.20000000000000001" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -66,7 +66,7 @@
                                     <action selector="shareButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RhS-Uh-rHv"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FBt-GA-Wzn" customClass="RoundButton" customModule="Factly" customModuleProvider="target">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FBt-GA-Wzn" customClass="RoundButton" customModule="Factly" customModuleProvider="target">
                                 <rect key="frame" x="68" y="491" width="48" height="48"/>
                                 <color key="backgroundColor" red="0.18823529410000001" green="0.20000000000000001" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
