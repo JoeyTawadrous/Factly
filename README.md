@@ -1,5 +1,6 @@
 # Factly Open Source iOS App (Learn New Facts Every Day)
 
+App Store Link: http://apple.co/2mdeltk
 Learn something new on your train ride, coffee break or when you visit the loo!
 
 
