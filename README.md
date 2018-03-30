@@ -23,7 +23,9 @@ Learn something new on your train ride, coffee break or when you visit the loo!
 * Local notifications
 
 
-<img alt="Screenshot" width="205px" src="readme-assets/1.png"><img alt="Screenshot2" width="205px" src="readme-assets/2.png"><img alt="Screenshot3" width="205px" src="readme-assets/3.png">
+<img alt="Screenshot" width="205px" src="readme-assets/1.png">
+<img alt="Screenshot2" width="205px" src="readme-assets/2.png">
+<img alt="Screenshot3" width="205px" src="readme-assets/3.png">
 
 
 # Tags

@@ -25,9 +25,6 @@ class Constants {
 	}
 	
 	struct Web {
-		static let HOST_DIR = "http://localhost:8888/Factly/"
-//		static let HOST_DIR = "http://applandr.com/Yellow/"
-		static let ACTIONS_DOT_PHP = HOST_DIR + "actions.php"
 		static let EMAIL = "joeytawadrous@gmail.com"
 	}
 }
