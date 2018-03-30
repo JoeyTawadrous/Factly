@@ -79,7 +79,7 @@ class Utils {
 	class func share(sender: UIButton, viewController: UIViewController, fact: String) {
 		let share = fact + "\n" + Constants.Strings.SHARE
 		let link : NSURL = NSURL(string: Constants.Common.APP_STORE_LINK)! // TODO: put bitly url here when app on store
-		let logo: UIImage = UIImage(named: "logo")!
+		let logo: UIImage = UIImage(named: "AppIcon")!
 		
 		let activityViewController : UIActivityViewController = UIActivityViewController(activityItems: [share, link, logo], applicationActivities: nil)
 		

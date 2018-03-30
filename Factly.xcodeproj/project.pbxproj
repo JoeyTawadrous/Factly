@@ -80,9 +80,10 @@
 			children = (
 				5265BE7A1E33AD0B0007CDCD /* Resources */,
 				5265BE7B1E33AD150007CDCD /* Utils */,
+				5265BE6C1E339C580007CDCD /* Main.storyboard */,
+				5265BE6F1E339C580007CDCD /* Assets.xcassets */,
 				5265BE681E339C580007CDCD /* AppDelegate.swift */,
 				5265BE6A1E339C580007CDCD /* Fact.swift */,
-				5265BE6C1E339C580007CDCD /* Main.storyboard */,
 			);
 			path = Factly;
 			sourceTree = "<group>";
@@ -91,11 +92,9 @@
 			isa = PBXGroup;
 			children = (
 				5265BE821E33AEFD0007CDCD /* Fonts */,
-				5265BE6F1E339C580007CDCD /* Assets.xcassets */,
 				5265BE741E339C580007CDCD /* Info.plist */,
 				5265BE711E339C580007CDCD /* LaunchScreen.storyboard */,
 			);
-			name = Resources;
 			path = Resources;
 			sourceTree = "<group>";
 		};
@@ -106,7 +105,6 @@
 				5265BE801E33AEA30007CDCD /* Extensions.swift */,
 				5265BE7C1E33AD210007CDCD /* Utils.swift */,
 			);
-			name = Utils;
 			path = Utils;
 			sourceTree = "<group>";
 		};
@@ -123,7 +121,6 @@
 				5265BE8B1E33AF150007CDCD /* OpenSans-Regular.ttf */,
 				5265BE871E33AF150007CDCD /* impact.ttf */,
 			);
-			name = Fonts;
 			path = Fonts;
 			sourceTree = "<group>";
 		};
