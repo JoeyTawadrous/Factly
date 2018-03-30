@@ -1,4 +1,4 @@
-# Factly Open Source iOS App (Learn New Facts Every Day)
+# Factly: Daily random facts - Learn fun new facts every day
 
 App Store Link: http://apple.co/2mdeltk
 
