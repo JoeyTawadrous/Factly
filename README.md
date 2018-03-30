@@ -2,7 +2,7 @@
 
 App Store Link: http://apple.co/2mdeltk
 
-<img alt="App Logo" width="200px" src="readme_assets/logo.jpeg">
+<img alt="App Logo" width="200px" src="readme_assets/logo.jpg">
 
 
 Learn something new on your commute, coffee break or simply because it's fun!
