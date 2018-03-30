@@ -2,6 +2,8 @@
 
 App Store Link: http://apple.co/2mdeltk
 
+<img alt="App Logo" width="200px" src="readme_assets/logo.jpeg">
+
 
 Learn something new on your commute, coffee break or simply because it's fun!
 
@@ -26,9 +28,7 @@ Want everyone to think you’re super smart? What better way to learn new facts.
 - Free, and with no ads!
 
 
-<img alt="Screenshot" width="205px" src="readme-assets/1.png">
-<img alt="Screenshot2" width="205px" src="readme-assets/2.png">
-<img alt="Screenshot3" width="205px" src="readme-assets/3.png">
+<img alt="Screenshot" width="205px" src="readme_assets/1.png"><img alt="Screenshot2" width="205px" src="readme_assets/2.png"><img alt="Screenshot3" width="205px" src="readme_assets/3.png">
 
 
 # Tags
