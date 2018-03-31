@@ -20,6 +20,7 @@
 		5265BE8E1E33AF150007CDCD /* GothamProMedium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5265BE851E33AF150007CDCD /* GothamProMedium.ttf */; };
 		5265BE8F1E33AF150007CDCD /* GothamProRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5265BE861E33AF150007CDCD /* GothamProRegular.ttf */; };
 		62613F8042AD45311DE5688A /* Pods_Factly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A90674582B57AA2181E988B /* Pods_Factly.framework */; };
+		927FC3F1CD837EFBD58BAB06 /* Pods_Factly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D91BC6D52E3CFC23A0DEA4B4 /* Pods_Factly.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		5265BE861E33AF150007CDCD /* GothamProRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamProRegular.ttf; sourceTree = "<group>"; };
 		81CE0C0712941C3CBF54BD72 /* Pods-Factly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Factly.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Factly/Pods-Factly.debug.xcconfig"; sourceTree = "<group>"; };
 		B0AC00D0CAFEFF75CAB3F87B /* Pods-Factly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Factly.release.xcconfig"; path = "Pods/Target Support Files/Pods-Factly/Pods-Factly.release.xcconfig"; sourceTree = "<group>"; };
+		D91BC6D52E3CFC23A0DEA4B4 /* Pods_Factly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Factly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				62613F8042AD45311DE5688A /* Pods_Factly.framework in Frameworks */,
+				927FC3F1CD837EFBD58BAB06 /* Pods_Factly.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +72,7 @@
 				5265BE671E339C580007CDCD /* Factly */,
 				5265BE661E339C580007CDCD /* Products */,
 				765991B7DD42431E7427642B /* Pods */,
+				A9C7BC73C92CEA5D8642B3CE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +136,14 @@
 				B0AC00D0CAFEFF75CAB3F87B /* Pods-Factly.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		A9C7BC73C92CEA5D8642B3CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D91BC6D52E3CFC23A0DEA4B4 /* Pods_Factly.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

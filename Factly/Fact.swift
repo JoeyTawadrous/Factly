@@ -49,6 +49,10 @@ class Fact: UIViewController {
 		UserDefaults.standard.addObserver(self, forKeyPath: Constants.Common.LATEST_FACT_ANSWER, options: NSKeyValueObservingOptions.new, context: nil)
 	}
 	
+	override var prefersStatusBarHidden: Bool {
+		return true
+	}
+	
 	
 	
 	/* MARK: Observers
@@ -96,11 +100,13 @@ class Fact: UIViewController {
 		self.decodedString = (question + "  =>  " + answer).decode
 
 		// Color answer
-		let attributedString = NSMutableAttributedString(string: self.decodedString)
-		let range = (self.decodedString as NSString).range(of: answer)
-		attributedString.addAttribute(NSForegroundColorAttributeName, value: UIColor(hexString: "F6D769"), range: range)
+//		let attributedString = NSMutableAttributedString(string: self.decodedString)
+//		let range = (self.decodedString as NSString).range(of: answer)
+//		var attributes = [NSAttributedStringKey : Any]()
+//		attributes = [.foregroundColor: UIColor(hexString: "6a70d6"), range: range]
 		
-		self.questionAndAnswerLabel?.attributedText = attributedString
+//		self.questionAndAnswerLabel?.attributedText = attributedString
+		questionAndAnswerLabel?.text = self.decodedString
 		
 		// show buttons
 		facebookButton?.isHidden = false
