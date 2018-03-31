@@ -12,6 +12,7 @@ class RoundButton: UIButton {
 	}
 }
 
+
 extension UIColor {
 	convenience init(hexString: String) {
 		let hex = hexString.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
@@ -32,12 +33,14 @@ extension UIColor {
 	}
 }
 
+
 extension NSMutableData {
 	func appendString(_ string: String) {
 		let data = string.data(using: String.Encoding.utf8, allowLossyConversion: true)
 		append(data!)
 	}
 }
+
 
 extension String {
 	var parseJSONString: NSDictionary {
@@ -63,6 +66,7 @@ extension String {
 		return nsMutableString as String
 	}
 }
+
 
 extension UIFont {
 	class func Impact(size: CGFloat) -> UIFont? {

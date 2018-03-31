@@ -1,4 +1,3 @@
-
 class Constants {
 	
 	struct Common {

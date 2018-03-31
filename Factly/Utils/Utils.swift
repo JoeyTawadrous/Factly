@@ -1,8 +1,7 @@
 import Social
 
+
 class Utils {
-	
-	
 	
 	/* MARK: Images
 	/////////////////////////////////////////// */

@@ -19,14 +19,11 @@
 		5265BE8D1E33AF150007CDCD /* GothamProBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5265BE841E33AF150007CDCD /* GothamProBold.ttf */; };
 		5265BE8E1E33AF150007CDCD /* GothamProMedium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5265BE851E33AF150007CDCD /* GothamProMedium.ttf */; };
 		5265BE8F1E33AF150007CDCD /* GothamProRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5265BE861E33AF150007CDCD /* GothamProRegular.ttf */; };
-		5265BE901E33AF150007CDCD /* impact.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5265BE871E33AF150007CDCD /* impact.ttf */; };
-		5265BE911E33AF150007CDCD /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5265BE881E33AF150007CDCD /* Nunito-Bold.ttf */; };
-		5265BE921E33AF150007CDCD /* Nunito-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5265BE891E33AF150007CDCD /* Nunito-Light.ttf */; };
-		5265BE931E33AF150007CDCD /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5265BE8A1E33AF150007CDCD /* Nunito-Regular.ttf */; };
-		5265BE941E33AF150007CDCD /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5265BE8B1E33AF150007CDCD /* OpenSans-Regular.ttf */; };
+		62613F8042AD45311DE5688A /* Pods_Factly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A90674582B57AA2181E988B /* Pods_Factly.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A90674582B57AA2181E988B /* Pods_Factly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Factly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5265BE651E339C580007CDCD /* Factly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Factly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5265BE681E339C580007CDCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5265BE6A1E339C580007CDCD /* Fact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fact.swift; sourceTree = "<group>"; };
@@ -41,11 +38,8 @@
 		5265BE841E33AF150007CDCD /* GothamProBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamProBold.ttf; sourceTree = "<group>"; };
 		5265BE851E33AF150007CDCD /* GothamProMedium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamProMedium.ttf; sourceTree = "<group>"; };
 		5265BE861E33AF150007CDCD /* GothamProRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamProRegular.ttf; sourceTree = "<group>"; };
-		5265BE871E33AF150007CDCD /* impact.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = impact.ttf; sourceTree = "<group>"; };
-		5265BE881E33AF150007CDCD /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
-		5265BE891E33AF150007CDCD /* Nunito-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Light.ttf"; sourceTree = "<group>"; };
-		5265BE8A1E33AF150007CDCD /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
-		5265BE8B1E33AF150007CDCD /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		81CE0C0712941C3CBF54BD72 /* Pods-Factly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Factly.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Factly/Pods-Factly.debug.xcconfig"; sourceTree = "<group>"; };
+		B0AC00D0CAFEFF75CAB3F87B /* Pods-Factly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Factly.release.xcconfig"; path = "Pods/Target Support Files/Pods-Factly/Pods-Factly.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,17 +47,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62613F8042AD45311DE5688A /* Pods_Factly.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		050AC55FAD8CA4810AB7F3CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A90674582B57AA2181E988B /* Pods_Factly.framework */,
+			);
+			name = Frameworks;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		5265BE5C1E339C570007CDCD = {
 			isa = PBXGroup;
 			children = (
 				5265BE671E339C580007CDCD /* Factly */,
 				5265BE661E339C580007CDCD /* Products */,
+				765991B7DD42431E7427642B /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,6 +83,7 @@
 		5265BE671E339C580007CDCD /* Factly */ = {
 			isa = PBXGroup;
 			children = (
+				050AC55FAD8CA4810AB7F3CD /* Frameworks */,
 				5265BE7A1E33AD0B0007CDCD /* Resources */,
 				5265BE7B1E33AD150007CDCD /* Utils */,
 				5265BE6C1E339C580007CDCD /* Main.storyboard */,
@@ -115,13 +121,17 @@
 				5265BE841E33AF150007CDCD /* GothamProBold.ttf */,
 				5265BE851E33AF150007CDCD /* GothamProMedium.ttf */,
 				5265BE861E33AF150007CDCD /* GothamProRegular.ttf */,
-				5265BE881E33AF150007CDCD /* Nunito-Bold.ttf */,
-				5265BE891E33AF150007CDCD /* Nunito-Light.ttf */,
-				5265BE8A1E33AF150007CDCD /* Nunito-Regular.ttf */,
-				5265BE8B1E33AF150007CDCD /* OpenSans-Regular.ttf */,
-				5265BE871E33AF150007CDCD /* impact.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		765991B7DD42431E7427642B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				81CE0C0712941C3CBF54BD72 /* Pods-Factly.debug.xcconfig */,
+				B0AC00D0CAFEFF75CAB3F87B /* Pods-Factly.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,9 +141,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5265BE771E339C580007CDCD /* Build configuration list for PBXNativeTarget "Factly" */;
 			buildPhases = (
+				C9FC629D2832974AE27114B5 /* [CP] Check Pods Manifest.lock */,
 				5265BE611E339C580007CDCD /* Sources */,
 				5265BE621E339C580007CDCD /* Frameworks */,
 				5265BE631E339C580007CDCD /* Resources */,
+				EE23361AD8411C25ABAE179D /* [CP] Embed Pods Frameworks */,
+				6FFA408C41BDEE2EA3C24A58 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -184,22 +197,71 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5265BE931E33AF150007CDCD /* Nunito-Regular.ttf in Resources */,
 				5265BE8C1E33AF150007CDCD /* GothamProBlack.ttf in Resources */,
 				5265BE8F1E33AF150007CDCD /* GothamProRegular.ttf in Resources */,
 				5265BE8D1E33AF150007CDCD /* GothamProBold.ttf in Resources */,
 				5265BE731E339C580007CDCD /* LaunchScreen.storyboard in Resources */,
-				5265BE911E33AF150007CDCD /* Nunito-Bold.ttf in Resources */,
-				5265BE901E33AF150007CDCD /* impact.ttf in Resources */,
-				5265BE921E33AF150007CDCD /* Nunito-Light.ttf in Resources */,
 				5265BE701E339C580007CDCD /* Assets.xcassets in Resources */,
 				5265BE6E1E339C580007CDCD /* Main.storyboard in Resources */,
-				5265BE941E33AF150007CDCD /* OpenSans-Regular.ttf in Resources */,
 				5265BE8E1E33AF150007CDCD /* GothamProMedium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6FFA408C41BDEE2EA3C24A58 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Factly/Pods-Factly-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9FC629D2832974AE27114B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Factly-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE23361AD8411C25ABAE179D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Factly/Pods-Factly-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FontAwesome.swift/FontAwesome_swift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontAwesome_swift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Factly/Pods-Factly-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5265BE611E339C580007CDCD /* Sources */ = {
@@ -259,9 +321,10 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -278,12 +341,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USER_HEADER_SEARCH_PATHS = "Pods/**";
 			};
 			name = Debug;
 		};
@@ -321,39 +385,106 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				USER_HEADER_SEARCH_PATHS = "Pods/**";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		5265BE781E339C580007CDCD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81CE0C0712941C3CBF54BD72 /* Pods-Factly.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_BOOL_CONVERSION = NO;
+				CLANG_WARN_CONSTANT_CONVERSION = NO;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CLANG_WARN_EMPTY_BODY = NO;
+				CLANG_WARN_ENUM_CONVERSION = NO;
+				CLANG_WARN_INFINITE_RECURSION = NO;
+				CLANG_WARN_INT_CONVERSION = NO;
+				CLANG_WARN_SUSPICIOUS_MOVE = NO;
+				CLANG_WARN_UNREACHABLE_CODE = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = P5Z7RL76WF;
+				GCC_ENABLE_BUILTIN_FUNCTIONS = NO;
+				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ABOUT_POINTER_SIGNEDNESS = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = NO;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = NO;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				IBSC_COMPILER_AUTO_ACTIVATE_CUSTOM_FONTS = NO;
+				IBSC_ERRORS = YES;
+				IBSC_FLATTEN_NIBS = NO;
+				IBSC_NOTICES = YES;
+				IBSC_WARNINGS = NO;
 				INFOPLIST_FILE = Factly/Resources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.joeyt.factly;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "Pods/**";
 			};
 			name = Debug;
 		};
 		5265BE791E339C580007CDCD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0AC00D0CAFEFF75CAB3F87B /* Pods-Factly.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_BOOL_CONVERSION = NO;
+				CLANG_WARN_CONSTANT_CONVERSION = NO;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CLANG_WARN_EMPTY_BODY = NO;
+				CLANG_WARN_ENUM_CONVERSION = NO;
+				CLANG_WARN_INFINITE_RECURSION = NO;
+				CLANG_WARN_INT_CONVERSION = NO;
+				CLANG_WARN_SUSPICIOUS_MOVE = NO;
+				CLANG_WARN_UNREACHABLE_CODE = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = P5Z7RL76WF;
+				GCC_ENABLE_BUILTIN_FUNCTIONS = NO;
+				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ABOUT_POINTER_SIGNEDNESS = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = NO;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = NO;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				IBSC_COMPILER_AUTO_ACTIVATE_CUSTOM_FONTS = NO;
+				IBSC_ERRORS = YES;
+				IBSC_FLATTEN_NIBS = NO;
+				IBSC_NOTICES = YES;
+				IBSC_WARNINGS = NO;
 				INFOPLIST_FILE = Factly/Resources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.joeyt.factly;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "Pods/**";
 			};
 			name = Release;
 		};

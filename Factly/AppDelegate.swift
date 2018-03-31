@@ -1,5 +1,6 @@
 import UIKit
 
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -23,7 +24,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		actionCategory.setActions([viewFactAction], for: .minimal)     // for when space is limited - 2 actions max
 		
 		application.registerUserNotificationSettings(UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: NSSet(array: [actionCategory]) as? Set<UIUserNotificationCategory>))
-		
 		
 		// Schedule repeating notification
 		if UserDefaults.standard.string(forKey: Constants.LocalNotifications.SCHEDULED_DAILY_NOTIFICATION) == nil {
