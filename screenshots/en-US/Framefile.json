@@ -1,0 +1,34 @@
+{
+    "default": {
+        "title": {
+            "color": "#fff",
+            "font": "assets/GothamProMedium.ttf"
+        },
+        "padding": 40,
+        "font_scale_factor": 0.2,
+        "show_complete_frame": true
+    },
+
+
+    "data": [{
+        "filter": "Fact 1",
+        "background": "assets/purple.jpeg",
+        "title": {
+            "text": "Become the smartest \nperson in the room"
+        }
+    },
+    {
+        "filter": "Fact 2",
+        "background": "assets/dark_blue.jpeg",
+        "title": {
+            "text": "Learn something new \nevery day"
+        }
+    },
+    {
+        "filter": "Fact 3",
+        "background": "assets/red.jpeg",
+        "title": {
+            "text": "New facts delivered \nvia push notification"
+        }
+    }]
+}

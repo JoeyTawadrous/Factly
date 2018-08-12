@@ -19,9 +19,21 @@
 		5265BE8D1E33AF150007CDCD /* GothamProBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5265BE841E33AF150007CDCD /* GothamProBold.ttf */; };
 		5265BE8E1E33AF150007CDCD /* GothamProMedium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5265BE851E33AF150007CDCD /* GothamProMedium.ttf */; };
 		5265BE8F1E33AF150007CDCD /* GothamProRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5265BE861E33AF150007CDCD /* GothamProRegular.ttf */; };
+		527575A3212055D3001336B3 /* FactlyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527575A2212055D3001336B3 /* FactlyUITests.swift */; };
+		527575AE212063BB001336B3 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527575AD212063BA001336B3 /* SnapshotHelper.swift */; };
 		62613F8042AD45311DE5688A /* Pods_Factly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A90674582B57AA2181E988B /* Pods_Factly.framework */; };
 		927FC3F1CD837EFBD58BAB06 /* Pods_Factly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D91BC6D52E3CFC23A0DEA4B4 /* Pods_Factly.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		527575A5212055D4001336B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5265BE5D1E339C570007CDCD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5265BE641E339C580007CDCD;
+			remoteInfo = Factly;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4A90674582B57AA2181E988B /* Pods_Factly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Factly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,6 +51,10 @@
 		5265BE841E33AF150007CDCD /* GothamProBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamProBold.ttf; sourceTree = "<group>"; };
 		5265BE851E33AF150007CDCD /* GothamProMedium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamProMedium.ttf; sourceTree = "<group>"; };
 		5265BE861E33AF150007CDCD /* GothamProRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamProRegular.ttf; sourceTree = "<group>"; };
+		527575A0212055D3001336B3 /* FactlyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FactlyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		527575A2212055D3001336B3 /* FactlyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactlyUITests.swift; sourceTree = "<group>"; };
+		527575A4212055D4001336B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		527575AD212063BA001336B3 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
 		81CE0C0712941C3CBF54BD72 /* Pods-Factly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Factly.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Factly/Pods-Factly.debug.xcconfig"; sourceTree = "<group>"; };
 		B0AC00D0CAFEFF75CAB3F87B /* Pods-Factly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Factly.release.xcconfig"; path = "Pods/Target Support Files/Pods-Factly/Pods-Factly.release.xcconfig"; sourceTree = "<group>"; };
 		D91BC6D52E3CFC23A0DEA4B4 /* Pods_Factly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Factly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +67,13 @@
 			files = (
 				62613F8042AD45311DE5688A /* Pods_Factly.framework in Frameworks */,
 				927FC3F1CD837EFBD58BAB06 /* Pods_Factly.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5275759D212055D3001336B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				5265BE671E339C580007CDCD /* Factly */,
+				527575A1212055D3001336B3 /* FactlyUITests */,
 				5265BE661E339C580007CDCD /* Products */,
 				765991B7DD42431E7427642B /* Pods */,
 				A9C7BC73C92CEA5D8642B3CE /* Frameworks */,
@@ -80,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				5265BE651E339C580007CDCD /* Factly.app */,
+				527575A0212055D3001336B3 /* FactlyUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -129,6 +154,16 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		527575A1212055D3001336B3 /* FactlyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				527575A2212055D3001336B3 /* FactlyUITests.swift */,
+				527575AD212063BA001336B3 /* SnapshotHelper.swift */,
+				527575A4212055D4001336B3 /* Info.plist */,
+			);
+			path = FactlyUITests;
+			sourceTree = "<group>";
+		};
 		765991B7DD42431E7427642B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,13 +204,31 @@
 			productReference = 5265BE651E339C580007CDCD /* Factly.app */;
 			productType = "com.apple.product-type.application";
 		};
+		5275759F212055D3001336B3 /* FactlyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 527575A9212055D4001336B3 /* Build configuration list for PBXNativeTarget "FactlyUITests" */;
+			buildPhases = (
+				5275759C212055D3001336B3 /* Sources */,
+				5275759D212055D3001336B3 /* Frameworks */,
+				5275759E212055D3001336B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				527575A6212055D4001336B3 /* PBXTargetDependency */,
+			);
+			name = FactlyUITests;
+			productName = FactlyUITests;
+			productReference = 527575A0212055D3001336B3 /* FactlyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		5265BE5D1E339C570007CDCD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0820;
+				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Joey Tawadrous";
 				TargetAttributes = {
@@ -183,6 +236,12 @@
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = P5Z7RL76WF;
 						ProvisioningStyle = Automatic;
+					};
+					5275759F212055D3001336B3 = {
+						CreatedOnToolsVersion = 9.4;
+						DevelopmentTeam = P5Z7RL76WF;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5265BE641E339C580007CDCD;
 					};
 				};
 			};
@@ -200,6 +259,7 @@
 			projectRoot = "";
 			targets = (
 				5265BE641E339C580007CDCD /* Factly */,
+				5275759F212055D3001336B3 /* FactlyUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -216,6 +276,13 @@
 				5265BE701E339C580007CDCD /* Assets.xcassets in Resources */,
 				5265BE6E1E339C580007CDCD /* Main.storyboard in Resources */,
 				5265BE8E1E33AF150007CDCD /* GothamProMedium.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5275759E212055D3001336B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +355,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5275759C212055D3001336B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				527575A3212055D3001336B3 /* FactlyUITests.swift in Sources */,
+				527575AE212063BB001336B3 /* SnapshotHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		527575A6212055D4001336B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5265BE641E339C580007CDCD /* Factly */;
+			targetProxy = 527575A5212055D4001336B3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5265BE6C1E339C580007CDCD /* Main.storyboard */ = {
@@ -500,6 +584,67 @@
 			};
 			name = Release;
 		};
+		527575A7212055D4001336B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = P5Z7RL76WF;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = FactlyUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.joeyt.FactlyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Factly;
+			};
+			name = Debug;
+		};
+		527575A8212055D4001336B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P5Z7RL76WF;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = FactlyUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.joeyt.FactlyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Factly;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -517,6 +662,15 @@
 			buildConfigurations = (
 				5265BE781E339C580007CDCD /* Debug */,
 				5265BE791E339C580007CDCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		527575A9212055D4001336B3 /* Build configuration list for PBXNativeTarget "FactlyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				527575A7212055D4001336B3 /* Debug */,
+				527575A8212055D4001336B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

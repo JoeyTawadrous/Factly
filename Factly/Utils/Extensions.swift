@@ -69,10 +69,6 @@ extension String {
 
 
 extension UIFont {
-	class func Impact(size: CGFloat) -> UIFont? {
-		return UIFont(name: "Impact", size: size)
-	}
-	
 	class func GothamProBold(size: CGFloat) -> UIFont? {
 		return UIFont(name: "GothamPro-Bold", size: size)
 	}
@@ -87,21 +83,5 @@ extension UIFont {
 	
 	class func GothamProRegular(size: CGFloat) -> UIFont? {
 		return UIFont(name: "GothamPro-Regular", size: size)
-	}
-	
-	class func NunitoBold(size: CGFloat) -> UIFont? {
-		return UIFont(name: "Nunito-Bold", size: size)
-	}
-	
-	class func NunitoLight(size: CGFloat) -> UIFont? {
-		return UIFont(name: "Nunito-Light", size: size)
-	}
-	
-	class func NunitoRegular(size: CGFloat) -> UIFont? {
-		return UIFont(name: "Nunito-Regular", size: size)
-	}
-	
-	class func OpenSansRegular(size: CGFloat) -> UIFont? {
-		return UIFont(name: "OpenSansRegular", size: size)
 	}
 }

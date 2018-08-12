@@ -25,21 +25,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		
 		application.registerUserNotificationSettings(UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: NSSet(array: [actionCategory]) as? Set<UIUserNotificationCategory>))
 		
-		// Schedule repeating notification
-		if UserDefaults.standard.string(forKey: Constants.LocalNotifications.SCHEDULED_DAILY_NOTIFICATION) == nil {
-			let notification = UILocalNotification()
-			notification.alertBody = Constants.Strings.NOTIFICATION
-			notification.alertAction = Constants.LocalNotifications.VIEW_FACT_ACTION_TITLE // text that is displayed after "slide to..." on the lock screen - defaults to "slide to view"
-			notification.fireDate = NSDate() as Date  // right now (when notification will be fired)
-			notification.soundName = UILocalNotificationDefaultSoundName
-			notification.repeatInterval = NSCalendar.Unit.day
-			notification.category = Constants.LocalNotifications.ACTION_CATEGORY_IDENTIFIER
-			UIApplication.shared.scheduleLocalNotification(notification)
-			
-			// Set constant so the daily notification will never be rescheduled
-			UserDefaults.standard.set("set", forKey: Constants.LocalNotifications.SCHEDULED_DAILY_NOTIFICATION)
-		}
-		
 		return true
 	}
 
@@ -57,24 +42,48 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	func applicationDidBecomeActive(_ application: UIApplication) {
 		NotificationCenter.default.post(name: Notification.Name(rawValue: "TodoListShouldRefresh"), object: self)
 	
+		// if I have a fact -> add that in the alert!
+		var notificationAlertBody = Constants.Strings.NOTIFICATION
+		if UserDefaults.standard.string(forKey: Constants.Common.LATEST_FACT_QUESTION) != nil {
+			notificationAlertBody = UserDefaults.standard.string(forKey: Constants.Common.LATEST_FACT_QUESTION)!
+		}
+		
+		
+		// Schedule repeating notification
+		if UserDefaults.standard.string(forKey: Constants.LocalNotifications.SCHEDULED_DAILY_NOTIFICATION) == nil {
+			let notification = UILocalNotification()
+			notification.alertBody = notificationAlertBody
+			notification.alertAction = Constants.LocalNotifications.VIEW_FACT_ACTION_TITLE // text that is displayed after "slide to..." on the lock screen - defaults to "slide to view"
+			notification.fireDate = NSDate() as Date  // right now (when notification will be fired)
+			notification.soundName = UILocalNotificationDefaultSoundName
+			notification.repeatInterval = NSCalendar.Unit.day
+			notification.category = Constants.LocalNotifications.ACTION_CATEGORY_IDENTIFIER
+			UIApplication.shared.scheduleLocalNotification(notification)
+			
+			// Set constant so the daily notification will never be rescheduled
+			UserDefaults.standard.set("set", forKey: Constants.LocalNotifications.SCHEDULED_DAILY_NOTIFICATION)
+		}
+		
+		
 		let date = Date()
 		let formatter = DateFormatter()
 		formatter.dateFormat = "dd.MM.yyyy"
 		let todaysDate = formatter.string(from: date)
 		
-		if UserDefaults.standard.string(forKey: Constants.LocalNotifications.LAST_FACT_DATE) == nil {
-			pullFact()
-			UserDefaults.standard.set(todaysDate, forKey: Constants.LocalNotifications.LAST_FACT_DATE)
-		}
-		else {
-			let lastFactDate = UserDefaults.standard.string(forKey: Constants.LocalNotifications.LAST_FACT_DATE)
-			
-			// Check if 24 hours have passed since the last fact was pulled
-			if formatter.date(from: lastFactDate!)! < formatter.date(from: todaysDate)! {
-				pullFact()
-				UserDefaults.standard.set(todaysDate, forKey: Constants.LocalNotifications.LAST_FACT_DATE)
-			}
-		}
+		pullFact()
+//		if UserDefaults.standard.string(forKey: Constants.LocalNotifications.LAST_FACT_DATE) == nil {
+//			pullFact()
+//			UserDefaults.standard.set(todaysDate, forKey: Constants.LocalNotifications.LAST_FACT_DATE)
+//		}
+//		else {
+//			let lastFactDate = UserDefaults.standard.string(forKey: Constants.LocalNotifications.LAST_FACT_DATE)
+//			
+//			// Check if 24 hours have passed since the last fact was pulled
+//			if formatter.date(from: lastFactDate!)! < formatter.date(from: todaysDate)! {
+//				pullFact()
+//				UserDefaults.standard.set(todaysDate, forKey: Constants.LocalNotifications.LAST_FACT_DATE)
+//			}
+//		}
 	}
 	
 	func applicationWillResignActive(_ application: UIApplication) {

@@ -24,11 +24,6 @@ class Fact: UIViewController {
 		grayBGView.view.backgroundColor = UIColor.black.withAlphaComponent(0.5)
 		self.view.addSubview(grayBGView.view)
 		
-		// Get & set random picture bg
-		let pictures = ["fire", "mountain", "mountains", "night", "night_house", "snow", "watch"]
-		let randomPic = pictures[Int(arc4random_uniform(UInt32(pictures.count)))]
-		bgImageView?.image = UIImage(named: randomPic)
-		
 		// Button iamges
 		facebookButton?.setImage(Utils.imageResize(UIImage(named: "facebook")!, sizeChange: CGSize(width: 22, height: 22)).withRenderingMode(UIImageRenderingMode.alwaysTemplate), for: .normal)
 		twitterButton?.setImage(Utils.imageResize(UIImage(named: "twitter")!, sizeChange: CGSize(width: 21, height: 21)).withRenderingMode(UIImageRenderingMode.alwaysTemplate), for: .normal)
@@ -47,6 +42,13 @@ class Fact: UIViewController {
 		
 		// add observer that will the fact label when a new one is pulled
 		UserDefaults.standard.addObserver(self, forKeyPath: Constants.Common.LATEST_FACT_ANSWER, options: NSKeyValueObservingOptions.new, context: nil)
+	}
+	
+	override func viewWillLayoutSubviews() {
+		// Get & set random picture bg
+		let pictures = ["fire", "mountain", "mountains", "night", "night_house", "snow", "watch"]
+		let randomPic = pictures[Int(arc4random_uniform(UInt32(pictures.count)))]
+		bgImageView?.image = UIImage(named: randomPic)
 	}
 	
 	override var prefersStatusBarHidden: Bool {
@@ -97,7 +99,7 @@ class Fact: UIViewController {
 		answer = answer.replacingOccurrences(of: "&quot;", with: "", options: .literal, range: nil)
 		question = question.removingPercentEncoding!
 		answer = answer.removingPercentEncoding!
-		self.decodedString = (question + "  =>  " + answer).decode
+		self.decodedString = (question + "\n\nAnswer: " + answer).decode
 
 		// Color answer
 //		let attributedString = NSMutableAttributedString(string: self.decodedString)
