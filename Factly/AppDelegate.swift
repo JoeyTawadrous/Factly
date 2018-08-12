@@ -69,21 +69,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		let formatter = DateFormatter()
 		formatter.dateFormat = "dd.MM.yyyy"
 		let todaysDate = formatter.string(from: date)
-		
-		pullFact()
-//		if UserDefaults.standard.string(forKey: Constants.LocalNotifications.LAST_FACT_DATE) == nil {
-//			pullFact()
-//			UserDefaults.standard.set(todaysDate, forKey: Constants.LocalNotifications.LAST_FACT_DATE)
-//		}
-//		else {
-//			let lastFactDate = UserDefaults.standard.string(forKey: Constants.LocalNotifications.LAST_FACT_DATE)
-//			
-//			// Check if 24 hours have passed since the last fact was pulled
-//			if formatter.date(from: lastFactDate!)! < formatter.date(from: todaysDate)! {
-//				pullFact()
-//				UserDefaults.standard.set(todaysDate, forKey: Constants.LocalNotifications.LAST_FACT_DATE)
-//			}
-//		}
+	
+		if UserDefaults.standard.string(forKey: Constants.LocalNotifications.LAST_FACT_DATE) == nil {
+			pullFact()
+			UserDefaults.standard.set(todaysDate, forKey: Constants.LocalNotifications.LAST_FACT_DATE)
+		}
+		else {
+			let lastFactDate = UserDefaults.standard.string(forKey: Constants.LocalNotifications.LAST_FACT_DATE)
+			
+			// Check if 24 hours have passed since the last fact was pulled
+			if formatter.date(from: lastFactDate!)! < formatter.date(from: todaysDate)! {
+				pullFact()
+				UserDefaults.standard.set(todaysDate, forKey: Constants.LocalNotifications.LAST_FACT_DATE)
+			}
+		}
 	}
 	
 	func applicationWillResignActive(_ application: UIApplication) {
