@@ -7,6 +7,6 @@ class RoundButton: UIButton {
 		layer.cornerRadius = bounds.size.width / 2
 		clipsToBounds = true
 		
-		layer.backgroundColor = UIColor(hexString: "303338").cgColor
+		layer.backgroundColor = UIColor(hex: "303338").cgColor
 	}
 }

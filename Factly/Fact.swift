@@ -9,7 +9,7 @@ class Fact: UIViewController {
 	@IBOutlet var facebookButton: RoundButton?
 	@IBOutlet var twitterButton: RoundButton?
 	@IBOutlet var shareButton: RoundButton?
-	@IBOutlet var menuButton: UIBarButtonItem!
+	@IBOutlet var menuButton: UIButton!
 	
 	
 	var grayBGView: UIViewController!
@@ -21,7 +21,8 @@ class Fact: UIViewController {
 	/////////////////////////////////////////// */
 	override func viewDidLoad() {
 		// Styling
-		Utils.createFontAwesomeBarButton(button: menuButton, icon: .bars, style: .solid)
+		menuButton.titleLabel?.font = UIFont.fontAwesome(ofSize: 21, style: .solid)
+		menuButton.setTitle(String.fontAwesomeIcon(name: .bars), for: .normal)
 		
 		
 		// Gray bg view
@@ -38,6 +39,7 @@ class Fact: UIViewController {
 		
 		
 		// Bring views to front
+		self.view.bringSubview(toFront: menuButton!)
 		self.view.bringSubview(toFront: questionAndAnswerLabel!)
 		self.view.bringSubview(toFront: appNameLabel!)
 		self.view.bringSubview(toFront: facebookButton!)

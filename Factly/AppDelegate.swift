@@ -10,6 +10,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	/* MARK: Init
 	/////////////////////////////////////////// */
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+		
+		// Styling
+		UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor : UIColor(hex: Constants.Colors.PURPLE_DARK)]
 	
 		// Local notifications
 		let viewFactAction = UIMutableUserNotificationAction()

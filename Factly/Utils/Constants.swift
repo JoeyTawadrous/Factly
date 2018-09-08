@@ -1,5 +1,10 @@
 class Constants {
 	
+	struct Colors {
+		static let PURPLE_DARK = "6A70D6"
+	}
+	
+	
 	struct Core {
 		static let APP_ID = "1200288775"
 		static let APP_NAME = "Factly"
@@ -27,7 +32,7 @@ class Constants {
 	
 	
 	struct Strings {
-		static let NOTIFICATION = "A new fact is ready for you! 😄 (Resets in 24 hours)"
+		static let NOTIFICATION = "Fact of the Day 😄"
 		
 		// Links
 		static let LINK_APP_REVIEW = "itms-apps://itunes.apple.com/app/apple-store/id" + Core.APP_ID + "?action=write-review"

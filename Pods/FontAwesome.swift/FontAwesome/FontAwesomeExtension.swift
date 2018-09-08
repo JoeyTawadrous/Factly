@@ -1,4 +1,4 @@
-// FontAwesomeImageView.swift
+// FontAwesomeExtension.swift
 //
 // Copyright (c) 2014-present FontAwesome.swift contributors
 //
@@ -20,41 +20,17 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-import UIKit
+import Foundation
 
-@IBDesignable public class FontAwesomeImageView: UIImageView {
-
-    @IBInspectable public var cssCode: String = "fa-font-awesome-flag"
-    @IBInspectable public var imageColor: UIColor = .black
-    @IBInspectable public var imageBackgroundColor: UIColor = .clear
-    @IBInspectable public var styleName: String = "Brands"
-
-    public override func awakeFromNib() {
-        super.awakeFromNib()
-        useFontAwesomeImage()
-    }
-
-    public override func prepareForInterfaceBuilder() {
-        useFontAwesomeImage()
-    }
-
-    private func useFontAwesomeImage() {
-        createImages { (img, _) in
-            image = img
+public extension FontAwesome {
+    /// Get a FontAwesome string from the given CSS icon code. Icon code can be found here: http://fontawesome.io/icons/
+    ///
+    /// - parameter code: The preferred icon name.
+    /// - returns: FontAwesome icon.
+    public static func fromCode(_ code: String) -> FontAwesome? {
+        guard let raw = FontAwesomeIcons[code], let icon = FontAwesome(rawValue: raw) else {
+            return nil
         }
+        return icon
     }
-
-}
-
-extension FontAwesomeImageView: FontAwesomeImageRepresentable {
-
-    var imageWidth: CGFloat {
-        return frame.width
-    }
-
-    var imageConfigs: [ImageConfig] {
-        guard let style = FontAwesomeStyle(rawValue: styleName.lowercased()) else { return [] }
-        return [(cssCode, style, imageColor, imageBackgroundColor)]
-    }
-
 }

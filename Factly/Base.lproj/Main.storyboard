@@ -82,13 +82,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Factly" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QE2-eP-Mkq">
-                                <rect key="frame" x="97" y="20" width="181" height="46"/>
+                                <rect key="frame" x="97" y="25" width="181" height="46"/>
                                 <fontDescription key="fontDescription" name="GothamPro-Bold" family="Gotham Pro" pointSize="23"/>
                                 <color key="textColor" red="0.41568627450980389" green="0.4392156862745098" blue="0.83921568627450982" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2H-Q3-0so">
-                                <rect key="frame" x="329" y="20" width="30" height="30"/>
+                                <rect key="frame" x="329" y="33" width="30" height="30"/>
                                 <connections>
                                     <action selector="menuButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jVH-de-P00"/>
                                 </connections>
@@ -97,7 +97,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="QE2-eP-Mkq" firstAttribute="centerX" secondItem="vTK-pM-4DO" secondAttribute="centerX" id="04F-5K-3Iw"/>
-                            <constraint firstItem="QE2-eP-Mkq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="2S4-4J-57n"/>
+                            <constraint firstItem="QE2-eP-Mkq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="5" id="2S4-4J-57n"/>
                             <constraint firstItem="Cqw-aI-qW3" firstAttribute="top" secondItem="vTK-pM-4DO" secondAttribute="bottom" constant="59" id="2bd-G5-NcH"/>
                             <constraint firstItem="tbc-O1-IxA" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="4jP-5n-j4I"/>
                             <constraint firstItem="tbc-O1-IxA" firstAttribute="centerX" secondItem="vTK-pM-4DO" secondAttribute="centerX" id="7LO-nk-etP"/>
@@ -109,14 +109,14 @@
                             <constraint firstAttribute="trailingMargin" secondItem="1Gk-fx-wKH" secondAttribute="trailing" constant="53" id="YIW-Sx-A52"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FBt-GA-Wzn" secondAttribute="bottom" constant="128" id="Z5y-l1-Ava"/>
                             <constraint firstAttribute="trailing" secondItem="tbc-O1-IxA" secondAttribute="trailing" id="aZx-DB-R3F"/>
-                            <constraint firstItem="vTK-pM-4DO" firstAttribute="top" secondItem="a2H-Q3-0so" secondAttribute="bottom" constant="44" id="bhn-yJ-IIP"/>
+                            <constraint firstItem="vTK-pM-4DO" firstAttribute="top" secondItem="a2H-Q3-0so" secondAttribute="bottom" constant="31" id="bhn-yJ-IIP"/>
                             <constraint firstItem="vTK-pM-4DO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="74" id="iR2-qQ-8K3"/>
                             <constraint firstItem="tbc-O1-IxA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="lKB-dx-2Hp"/>
                             <constraint firstItem="vTK-pM-4DO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="11" id="mWH-X5-ak0"/>
                             <constraint firstItem="1Gk-fx-wKH" firstAttribute="top" secondItem="vTK-pM-4DO" secondAttribute="bottom" constant="59" id="nXa-KM-ig0"/>
                             <constraint firstItem="tbc-O1-IxA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="q7o-g0-8Ms"/>
-                            <constraint firstItem="a2H-Q3-0so" firstAttribute="top" secondItem="QE2-eP-Mkq" secondAttribute="top" id="sJI-In-QJh"/>
-                            <constraint firstItem="vTK-pM-4DO" firstAttribute="top" secondItem="QE2-eP-Mkq" secondAttribute="bottom" constant="28" id="svB-72-BjQ"/>
+                            <constraint firstItem="a2H-Q3-0so" firstAttribute="top" secondItem="QE2-eP-Mkq" secondAttribute="top" constant="8" id="sJI-In-QJh"/>
+                            <constraint firstItem="vTK-pM-4DO" firstAttribute="top" secondItem="QE2-eP-Mkq" secondAttribute="bottom" constant="23" id="svB-72-BjQ"/>
                             <constraint firstItem="FBt-GA-Wzn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="52" id="uax-ZX-vQl"/>
                             <constraint firstItem="a2H-Q3-0so" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="v1z-Pl-5k9"/>
                         </constraints>
@@ -125,6 +125,7 @@
                         <outlet property="appNameLabel" destination="QE2-eP-Mkq" id="sqs-7X-Eoo"/>
                         <outlet property="bgImageView" destination="tbc-O1-IxA" id="eib-DQ-9Jy"/>
                         <outlet property="facebookButton" destination="Cqw-aI-qW3" id="yss-SX-p4g"/>
+                        <outlet property="menuButton" destination="a2H-Q3-0so" id="2kA-Nx-vLi"/>
                         <outlet property="questionAndAnswerLabel" destination="vTK-pM-4DO" id="iHZ-yF-B3r"/>
                         <outlet property="shareButton" destination="1Gk-fx-wKH" id="SVh-HR-FsS"/>
                         <outlet property="twitterButton" destination="FBt-GA-Wzn" id="x8Y-hU-9vL"/>
@@ -156,11 +157,11 @@
         <!--Settings-->
         <scene sceneID="iPU-qa-fMU">
             <objects>
-                <tableViewController storyboardIdentifier="Settings" id="gnX-px-AUa" customClass="Settings" customModule="Meditation" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="Settings" id="gnX-px-AUa" customClass="Settings" customModule="Factly" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="TEU-4h-F22">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.41176470590000003" green="0.80392156859999997" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.41568627450980389" green="0.4392156862745098" blue="0.83921568627450982" alpha="1" colorSpace="calibratedRGB"/>
                         <sections>
                             <tableViewSection headerTitle="App" id="1Tj-Mh-vAi">
                                 <cells>
@@ -183,7 +184,7 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u27-4r-OeZ">
-                                                    <rect key="frame" x="55" y="6" width="310" height="30"/>
+                                                    <rect key="frame" x="55" y="6.5" width="310" height="29"/>
                                                     <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
                                                     <state key="normal" title="Learn to Code">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -222,9 +223,9 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="omx-WB-tKe">
-                                                    <rect key="frame" x="55" y="6" width="310" height="30"/>
+                                                    <rect key="frame" x="55" y="6.5" width="310" height="29"/>
                                                     <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
-                                                    <state key="normal" title="Review Meditation Fox">
+                                                    <state key="normal" title="Review Factly">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
                                                     <connections>
@@ -261,7 +262,7 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tag-wR-lXy">
-                                                    <rect key="frame" x="55" y="6" width="310" height="30"/>
+                                                    <rect key="frame" x="55" y="6.5" width="310" height="29"/>
                                                     <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
                                                     <state key="normal" title="Send Feedback">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -304,7 +305,7 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ASb-D6-y4c">
-                                                    <rect key="frame" x="55" y="6" width="310" height="30"/>
+                                                    <rect key="frame" x="55" y="6.5" width="310" height="29"/>
                                                     <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
                                                     <state key="normal" title="Share the love">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -343,7 +344,7 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oS0-Vj-daj">
-                                                    <rect key="frame" x="55" y="6" width="310" height="30"/>
+                                                    <rect key="frame" x="55" y="6.5" width="310" height="29"/>
                                                     <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
                                                     <state key="normal" title="Follow us on Twitter">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -382,7 +383,7 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z5t-CU-Gkx">
-                                                    <rect key="frame" x="55" y="6" width="310" height="30"/>
+                                                    <rect key="frame" x="55" y="6.5" width="310" height="29"/>
                                                     <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
                                                     <state key="normal" title="Like us on Facebook">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -421,7 +422,7 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8rF-cf-jgG">
-                                                    <rect key="frame" x="55" y="6" width="310" height="30"/>
+                                                    <rect key="frame" x="55" y="6.5" width="310" height="29"/>
                                                     <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
                                                     <state key="normal" title="Heart us on Instagram">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -451,7 +452,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Settings" leftItemsSupplementBackButton="YES" id="MZt-Ru-xlO">
                         <barButtonItem key="leftBarButtonItem" id="tiv-rf-nbW">
-                            <color key="tintColor" red="0.62745098040000002" green="0.62352941179999999" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" red="0.41568627450980389" green="0.4392156862745098" blue="0.83921568627450982" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="backButtonPressed" destination="gnX-px-AUa" id="xoc-g0-Seq"/>
                             </connections>
