@@ -36,34 +36,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	}
 	
 	func application(_ application: UIApplication, didReceive notification: UILocalNotification) {
-		NotificationCenter.default.post(name: Notification.Name(rawValue: "TodoListShouldRefresh"), object: self)
+		NotificationCenter.default.post(name: Notification.Name(rawValue: "FactlyShouldRefresh"), object: self)
 	}
 	
 	func applicationDidBecomeActive(_ application: UIApplication) {
-		NotificationCenter.default.post(name: Notification.Name(rawValue: "TodoListShouldRefresh"), object: self)
+		NotificationCenter.default.post(name: Notification.Name(rawValue: "FactlyShouldRefresh"), object: self)
 	
-		// if I have a fact -> add that in the alert!
-		var notificationAlertBody = Constants.Strings.NOTIFICATION
-		if UserDefaults.standard.string(forKey: Constants.Common.LATEST_FACT_QUESTION) != nil {
-			notificationAlertBody = UserDefaults.standard.string(forKey: Constants.Common.LATEST_FACT_QUESTION)!
-		}
-		
-		
-		// Schedule repeating notification
-		if UserDefaults.standard.string(forKey: Constants.LocalNotifications.SCHEDULED_DAILY_NOTIFICATION) == nil {
-			let notification = UILocalNotification()
-			notification.alertBody = notificationAlertBody
-			notification.alertAction = Constants.LocalNotifications.VIEW_FACT_ACTION_TITLE // text that is displayed after "slide to..." on the lock screen - defaults to "slide to view"
-			notification.fireDate = NSDate() as Date  // right now (when notification will be fired)
-			notification.soundName = UILocalNotificationDefaultSoundName
-			notification.repeatInterval = NSCalendar.Unit.day
-			notification.category = Constants.LocalNotifications.ACTION_CATEGORY_IDENTIFIER
-			UIApplication.shared.scheduleLocalNotification(notification)
-			
-			// Set constant so the daily notification will never be rescheduled
-			UserDefaults.standard.set("set", forKey: Constants.LocalNotifications.SCHEDULED_DAILY_NOTIFICATION)
-		}
-		
+		setupNotifications()
 		
 		let date = Date()
 		let formatter = DateFormatter()
@@ -103,11 +82,36 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 					let question = result.value(forKey: "question")! as! String
 					let answer = result.value(forKey: "correct_answer")! as! String
 					
-					UserDefaults.standard.set(question, forKey: Constants.Common.LATEST_FACT_QUESTION)
-					UserDefaults.standard.set(answer, forKey: Constants.Common.LATEST_FACT_ANSWER)
+					UserDefaults.standard.set(question, forKey: Constants.Defaults.LATEST_FACT_QUESTION)
+					UserDefaults.standard.set(answer, forKey: Constants.Defaults.LATEST_FACT_ANSWER)
+					
+					self.setupNotifications()
 				})
 			}
 		})
+	}
+	
+	func setupNotifications() {
+		// if I have a fact -> add that in the alert!
+		var notificationAlertBody = Constants.Strings.NOTIFICATION
+		if UserDefaults.standard.string(forKey: Constants.Defaults.LATEST_FACT_QUESTION) != nil {
+			notificationAlertBody = UserDefaults.standard.string(forKey: Constants.Defaults.LATEST_FACT_QUESTION)!
+		}
+		
+		// Schedule repeating notification
+		if UserDefaults.standard.string(forKey: Constants.LocalNotifications.SCHEDULED_DAILY_NOTIFICATION) == nil {
+			let notification = UILocalNotification()
+			notification.alertBody = notificationAlertBody
+			notification.alertAction = Constants.LocalNotifications.VIEW_FACT_ACTION_TITLE // text that is displayed after "slide to..." on the lock screen - defaults to "slide to view"
+			notification.fireDate = NSDate() as Date  // right now (when notification will be fired)
+			notification.soundName = UILocalNotificationDefaultSoundName
+			notification.repeatInterval = NSCalendar.Unit.day
+			notification.category = Constants.LocalNotifications.ACTION_CATEGORY_IDENTIFIER
+			UIApplication.shared.scheduleLocalNotification(notification)
+			
+			// Set constant so the daily notification will never be rescheduled
+			UserDefaults.standard.set("set", forKey: Constants.LocalNotifications.SCHEDULED_DAILY_NOTIFICATION)
+		}
 	}
 }
 

@@ -1,4 +1,5 @@
 import Social
+import FontAwesome_swift
 
 
 class Utils {
@@ -75,15 +76,15 @@ class Utils {
 		}
 	}
 	
-	class func share(sender: UIButton, viewController: UIViewController, fact: String) {
-		let share = fact + "\n" + Constants.Strings.SHARE
-		let link : NSURL = NSURL(string: Constants.Common.APP_STORE_LINK)! // TODO: put bitly url here when app on store
+	class func openShareView(viewController: UIViewController, fact: String) {
+		let share = fact + "\n\n" + Constants.Strings.SHARE
+		let link : NSURL = NSURL(string: Constants.Strings.LINK_IOS_STORE)!
 		let logo: UIImage = UIImage(named: "AppIcon")!
 		
 		let activityViewController : UIActivityViewController = UIActivityViewController(activityItems: [share, link, logo], applicationActivities: nil)
 		
 		// This lines is for the popover you need to show in iPad
-		activityViewController.popoverPresentationController?.sourceView = sender
+		activityViewController.popoverPresentationController?.sourceView = viewController.view
 		
 		// This line remove the arrow of the popover to show in iPad
 		activityViewController.popoverPresentationController?.permittedArrowDirections = UIPopoverArrowDirection()
@@ -140,5 +141,13 @@ class Utils {
 		alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in }))
 		
 		view.present(alert, animated: true, completion: nil)
+	}
+	
+	class func createFontAwesomeBarButton(button: UIBarButtonItem, icon: FontAwesome, style: FontAwesomeStyle) {
+		var attributes = [NSAttributedStringKey : Any]()
+		attributes = [.font: UIFont.fontAwesome(ofSize: 21, style: style)]
+		button.setTitleTextAttributes(attributes, for: .normal)
+		button.setTitleTextAttributes(attributes, for: .selected)
+		button.title = String.fontAwesomeIcon(name: icon)
 	}
 }

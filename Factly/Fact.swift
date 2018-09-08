@@ -9,6 +9,8 @@ class Fact: UIViewController {
 	@IBOutlet var facebookButton: RoundButton?
 	@IBOutlet var twitterButton: RoundButton?
 	@IBOutlet var shareButton: RoundButton?
+	@IBOutlet var menuButton: UIBarButtonItem!
+	
 	
 	var grayBGView: UIViewController!
 	var decodedString: String!
@@ -18,16 +20,22 @@ class Fact: UIViewController {
 	/* MARK: Initialising
 	/////////////////////////////////////////// */
 	override func viewDidLoad() {
+		// Styling
+		Utils.createFontAwesomeBarButton(button: menuButton, icon: .bars, style: .solid)
+		
+		
 		// Gray bg view
 		grayBGView = UIViewController()
 		grayBGView.view.frame = UIScreen.main.bounds
 		grayBGView.view.backgroundColor = UIColor.black.withAlphaComponent(0.5)
 		self.view.addSubview(grayBGView.view)
 		
+		
 		// Button iamges
 		facebookButton?.setImage(Utils.imageResize(UIImage(named: "facebook")!, sizeChange: CGSize(width: 22, height: 22)).withRenderingMode(UIImageRenderingMode.alwaysTemplate), for: .normal)
 		twitterButton?.setImage(Utils.imageResize(UIImage(named: "twitter")!, sizeChange: CGSize(width: 21, height: 21)).withRenderingMode(UIImageRenderingMode.alwaysTemplate), for: .normal)
 		shareButton?.setImage(Utils.imageResize(UIImage(named: "share")!, sizeChange: CGSize(width: 22, height: 22)).withRenderingMode(UIImageRenderingMode.alwaysTemplate), for: .normal)
+		
 		
 		// Bring views to front
 		self.view.bringSubview(toFront: questionAndAnswerLabel!)
@@ -36,12 +44,13 @@ class Fact: UIViewController {
 		self.view.bringSubview(toFront: twitterButton!)
 		self.view.bringSubview(toFront: shareButton!)
 		
-		if UserDefaults.standard.string(forKey: Constants.Common.LATEST_FACT_ANSWER) != nil {
+		if UserDefaults.standard.string(forKey: Constants.Defaults.LATEST_FACT_ANSWER) != nil {
 			updateFact()
 		}
 		
-		// add observer that will the fact label when a new one is pulled
-		UserDefaults.standard.addObserver(self, forKeyPath: Constants.Common.LATEST_FACT_ANSWER, options: NSKeyValueObservingOptions.new, context: nil)
+		
+		// Add observer that will the fact label when a new one is pulled
+		UserDefaults.standard.addObserver(self, forKeyPath: Constants.Defaults.LATEST_FACT_ANSWER, options: NSKeyValueObservingOptions.new, context: nil)
 	}
 	
 	override func viewWillLayoutSubviews() {
@@ -60,19 +69,23 @@ class Fact: UIViewController {
 	/* MARK: Observers
 	/////////////////////////////////////////// */
 	override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
-		if keyPath == Constants.Common.LATEST_FACT_ANSWER {
+		if keyPath == Constants.Defaults.LATEST_FACT_ANSWER {
 			updateFact()
 		}
 	}
 	
 	deinit {
-		UserDefaults.standard.removeObserver(self, forKeyPath: Constants.Common.LATEST_FACT_ANSWER)
+		UserDefaults.standard.removeObserver(self, forKeyPath: Constants.Defaults.LATEST_FACT_ANSWER)
 	}
 
 	
 	
 	/* MARK: Button Actions
 	/////////////////////////////////////////// */
+	@IBAction func menuButtonPressed(_ sender: AnyObject) {
+		Utils.presentView(self, viewName: Constants.Views.SETTINGS_NAV_CONTROLLER)
+	}
+	
 	@IBAction func shareToFacebookButtonPressed(_ sender: UIButton) {
 		Utils.post(toService: SLServiceTypeFacebook, view: self, fact: self.decodedString)
 	}
@@ -82,7 +95,7 @@ class Fact: UIViewController {
 	}
 	
 	@IBAction func shareButtonPressed(_ sender: UIButton) {
-		Utils.share(sender: sender, viewController: self, fact: self.decodedString)
+		Utils.openShareView(viewController: self, fact: self.decodedString)
 	}
 	
 	
@@ -91,8 +104,8 @@ class Fact: UIViewController {
 	/////////////////////////////////////////// */
 	func updateFact() {
 		// Get data
-		var question = UserDefaults.standard.string(forKey: Constants.Common.LATEST_FACT_QUESTION)! as String
-		var answer = UserDefaults.standard.string(forKey: Constants.Common.LATEST_FACT_ANSWER)! as String
+		var question = UserDefaults.standard.string(forKey: Constants.Defaults.LATEST_FACT_QUESTION)! as String
+		var answer = UserDefaults.standard.string(forKey: Constants.Defaults.LATEST_FACT_ANSWER)! as String
 		
 		// Decode string
 		question = question.replacingOccurrences(of: "&quot;", with: "", options: .literal, range: nil)
@@ -100,14 +113,6 @@ class Fact: UIViewController {
 		question = question.removingPercentEncoding!
 		answer = answer.removingPercentEncoding!
 		self.decodedString = (question + "\n\nAnswer: " + answer).decode
-
-		// Color answer
-//		let attributedString = NSMutableAttributedString(string: self.decodedString)
-//		let range = (self.decodedString as NSString).range(of: answer)
-//		var attributes = [NSAttributedStringKey : Any]()
-//		attributes = [.foregroundColor: UIColor(hexString: "6a70d6"), range: range]
-		
-//		self.questionAndAnswerLabel?.attributedText = attributedString
 		questionAndAnswerLabel?.text = self.decodedString
 		
 		// show buttons

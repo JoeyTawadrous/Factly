@@ -21,6 +21,8 @@
 		5265BE8F1E33AF150007CDCD /* GothamProRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5265BE861E33AF150007CDCD /* GothamProRegular.ttf */; };
 		527575A3212055D3001336B3 /* FactlyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527575A2212055D3001336B3 /* FactlyUITests.swift */; };
 		527575AE212063BB001336B3 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527575AD212063BA001336B3 /* SnapshotHelper.swift */; };
+		52C7035A2144848600AC839F /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C703592144848600AC839F /* Settings.swift */; };
+		52C7035C214484F200AC839F /* CustomClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C7035B214484F200AC839F /* CustomClasses.swift */; };
 		62613F8042AD45311DE5688A /* Pods_Factly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A90674582B57AA2181E988B /* Pods_Factly.framework */; };
 		927FC3F1CD837EFBD58BAB06 /* Pods_Factly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D91BC6D52E3CFC23A0DEA4B4 /* Pods_Factly.framework */; };
 /* End PBXBuildFile section */
@@ -55,6 +57,8 @@
 		527575A2212055D3001336B3 /* FactlyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactlyUITests.swift; sourceTree = "<group>"; };
 		527575A4212055D4001336B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		527575AD212063BA001336B3 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
+		52C703592144848600AC839F /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		52C7035B214484F200AC839F /* CustomClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomClasses.swift; sourceTree = "<group>"; };
 		81CE0C0712941C3CBF54BD72 /* Pods-Factly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Factly.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Factly/Pods-Factly.debug.xcconfig"; sourceTree = "<group>"; };
 		B0AC00D0CAFEFF75CAB3F87B /* Pods-Factly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Factly.release.xcconfig"; path = "Pods/Target Support Files/Pods-Factly/Pods-Factly.release.xcconfig"; sourceTree = "<group>"; };
 		D91BC6D52E3CFC23A0DEA4B4 /* Pods_Factly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Factly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,6 +123,7 @@
 				5265BE6F1E339C580007CDCD /* Assets.xcassets */,
 				5265BE681E339C580007CDCD /* AppDelegate.swift */,
 				5265BE6A1E339C580007CDCD /* Fact.swift */,
+				52C703592144848600AC839F /* Settings.swift */,
 			);
 			path = Factly;
 			sourceTree = "<group>";
@@ -137,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				5265BE7E1E33AD460007CDCD /* Constants.swift */,
+				52C7035B214484F200AC839F /* CustomClasses.swift */,
 				5265BE801E33AEA30007CDCD /* Extensions.swift */,
 				5265BE7C1E33AD210007CDCD /* Utils.swift */,
 			);
@@ -347,7 +353,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52C7035A2144848600AC839F /* Settings.swift in Sources */,
 				5265BE811E33AEA30007CDCD /* Extensions.swift in Sources */,
+				52C7035C214484F200AC839F /* CustomClasses.swift in Sources */,
 				5265BE6B1E339C580007CDCD /* Fact.swift in Sources */,
 				5265BE691E339C580007CDCD /* AppDelegate.swift in Sources */,
 				5265BE7D1E33AD210007CDCD /* Utils.swift in Sources */,
