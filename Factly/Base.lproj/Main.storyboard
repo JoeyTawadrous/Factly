@@ -163,9 +163,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.41568627450980389" green="0.4392156862745098" blue="0.83921568627450982" alpha="1" colorSpace="calibratedRGB"/>
                         <sections>
-                            <tableViewSection headerTitle="App" id="1Tj-Mh-vAi">
+                            <tableViewSection headerTitle="About Factly" id="1Tj-Mh-vAi">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="PaO-d3-6Lz">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" id="PaO-d3-6Lz">
                                         <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PaO-d3-6Lz" id="d1m-pf-dZT">
@@ -180,16 +180,18 @@
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
                                                     <connections>
-                                                        <action selector="learnableiOSAppButtonPressed" destination="gnX-px-AUa" eventType="touchUpInside" id="dsG-mz-GzF"/>
+                                                        <action selector="aboutButtonPressed" destination="gnX-px-AUa" eventType="touchUpInside" id="XuT-tc-wUE"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u27-4r-OeZ">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u27-4r-OeZ">
                                                     <rect key="frame" x="55" y="6.5" width="310" height="29"/>
                                                     <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
-                                                    <state key="normal" title="Learn to Code">
+                                                    <state key="normal">
+                                                        <string key="title">I'm a strong believer that knowledge is power. There are so many complex and beautiful things in our universe. Stories have been told, wars have been won, people have been saved, cities have been built. All of this is possible becuase one or many people had the knowledge to make it happen.</string>
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
                                                     <connections>
+                                                        <action selector="aboutButtonPressed" destination="gnX-px-AUa" eventType="touchUpInside" id="Vs9-ZA-qTC"/>
                                                         <action selector="learnableiOSAppButtonPressed" destination="gnX-px-AUa" eventType="touchUpInside" id="9au-uJ-4hM"/>
                                                     </connections>
                                                 </button>
@@ -204,14 +206,18 @@
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="separatorInset" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="DG7-SW-gwa">
-                                        <rect key="frame" x="0.0" y="99.5" width="375" height="44"/>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="App" id="hAY-nI-QoP">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" id="ex7-yF-yfe">
+                                        <rect key="frame" x="0.0" y="155.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DG7-SW-gwa" id="W2c-4c-ZPl">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ex7-yF-yfe" id="qlH-oh-Cba">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Arm-Lp-khU">
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0U-oU-VbF">
                                                     <rect key="frame" x="22" y="6.5" width="30" height="29"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
@@ -219,38 +225,38 @@
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
                                                     <connections>
-                                                        <action selector="reviewButtonPressed" destination="gnX-px-AUa" eventType="touchUpInside" id="5a6-vp-wcb"/>
+                                                        <action selector="learnableiOSAppButtonPressed" destination="gnX-px-AUa" eventType="touchUpInside" id="m2A-7f-c2v"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="omx-WB-tKe">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mxu-ml-Nnv">
                                                     <rect key="frame" x="55" y="6.5" width="310" height="29"/>
                                                     <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
-                                                    <state key="normal" title="Review Factly">
+                                                    <state key="normal" title="Learn to Code">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
                                                     <connections>
-                                                        <action selector="reviewButtonPressed" destination="gnX-px-AUa" eventType="touchUpInside" id="Bu2-5n-xTE"/>
+                                                        <action selector="learnableiOSAppButtonPressed" destination="gnX-px-AUa" eventType="touchUpInside" id="LJo-C9-At0"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="omx-WB-tKe" firstAttribute="centerX" secondItem="W2c-4c-ZPl" secondAttribute="centerX" constant="22.5" id="2ig-vn-Mzk"/>
-                                                <constraint firstItem="omx-WB-tKe" firstAttribute="leading" secondItem="W2c-4c-ZPl" secondAttribute="leadingMargin" constant="39" id="ZlI-Cf-nbT"/>
-                                                <constraint firstItem="omx-WB-tKe" firstAttribute="centerY" secondItem="W2c-4c-ZPl" secondAttribute="centerY" id="nwp-de-UPV"/>
+                                                <constraint firstItem="Mxu-ml-Nnv" firstAttribute="centerX" secondItem="qlH-oh-Cba" secondAttribute="centerX" constant="22.5" id="0Rc-gJ-iPL"/>
+                                                <constraint firstItem="Mxu-ml-Nnv" firstAttribute="leading" secondItem="qlH-oh-Cba" secondAttribute="leadingMargin" constant="39" id="ET3-K9-PyH"/>
+                                                <constraint firstItem="Mxu-ml-Nnv" firstAttribute="centerY" secondItem="qlH-oh-Cba" secondAttribute="centerY" id="X00-Zx-wLk"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="separatorInset" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="Q1T-gg-9vh">
-                                        <rect key="frame" x="0.0" y="143.5" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" id="ctj-t3-yfl">
+                                        <rect key="frame" x="0.0" y="199.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Q1T-gg-9vh" id="1tP-at-nIA">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ctj-t3-yfl" id="OCG-xu-xIe">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMD-ag-lxR">
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hEL-nJ-aT6">
                                                     <rect key="frame" x="22" y="6.5" width="30" height="29"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
@@ -258,24 +264,102 @@
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
                                                     <connections>
-                                                        <action selector="sendFeedbackButtonPressed" destination="gnX-px-AUa" eventType="touchUpInside" id="nlB-G7-TKO"/>
+                                                        <action selector="reviewButtonPressed" destination="gnX-px-AUa" eventType="touchUpInside" id="TMm-Az-oAG"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tag-wR-lXy">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zNz-gt-oaa">
+                                                    <rect key="frame" x="55" y="6.5" width="310" height="29"/>
+                                                    <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
+                                                    <state key="normal" title="Review Factly">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="reviewButtonPressed" destination="gnX-px-AUa" eventType="touchUpInside" id="qoG-v7-uYv"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="zNz-gt-oaa" firstAttribute="centerX" secondItem="OCG-xu-xIe" secondAttribute="centerX" constant="22.5" id="L2R-UE-1T4"/>
+                                                <constraint firstItem="zNz-gt-oaa" firstAttribute="centerY" secondItem="OCG-xu-xIe" secondAttribute="centerY" id="byb-ai-lmv"/>
+                                                <constraint firstItem="zNz-gt-oaa" firstAttribute="leading" secondItem="OCG-xu-xIe" secondAttribute="leadingMargin" constant="39" id="s3y-eG-oVt"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="separatorInset" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" id="1mV-wo-gLu">
+                                        <rect key="frame" x="0.0" y="243.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1mV-wo-gLu" id="wY1-ZR-Ydf">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oa7-KA-lxZ">
+                                                    <rect key="frame" x="22" y="6.5" width="30" height="29"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
+                                                    <state key="normal">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="sendFeedbackButtonPressed" destination="gnX-px-AUa" eventType="touchUpInside" id="Ff4-59-8Rd"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="32I-bQ-sPP">
                                                     <rect key="frame" x="55" y="6.5" width="310" height="29"/>
                                                     <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
                                                     <state key="normal" title="Send Feedback">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
                                                     <connections>
-                                                        <action selector="sendFeedbackButtonPressed" destination="gnX-px-AUa" eventType="touchUpInside" id="4m6-J1-fxl"/>
+                                                        <action selector="sendFeedbackButtonPressed" destination="gnX-px-AUa" eventType="touchUpInside" id="zTP-n6-cX0"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="Tag-wR-lXy" firstAttribute="leading" secondItem="1tP-at-nIA" secondAttribute="leadingMargin" constant="39" id="a0H-M6-RUN"/>
-                                                <constraint firstItem="Tag-wR-lXy" firstAttribute="centerX" secondItem="1tP-at-nIA" secondAttribute="centerX" constant="22.5" id="bIe-Be-iiY"/>
-                                                <constraint firstItem="Tag-wR-lXy" firstAttribute="centerY" secondItem="1tP-at-nIA" secondAttribute="centerY" id="edP-67-4Jo"/>
+                                                <constraint firstItem="32I-bQ-sPP" firstAttribute="centerY" secondItem="wY1-ZR-Ydf" secondAttribute="centerY" id="HLE-0F-ZCb"/>
+                                                <constraint firstItem="32I-bQ-sPP" firstAttribute="leading" secondItem="wY1-ZR-Ydf" secondAttribute="leadingMargin" constant="39" id="LQL-pg-w06"/>
+                                                <constraint firstItem="32I-bQ-sPP" firstAttribute="centerX" secondItem="wY1-ZR-Ydf" secondAttribute="centerX" constant="22.5" id="YVY-sH-1i1"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="separatorInset" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" id="z5q-51-jba">
+                                        <rect key="frame" x="0.0" y="287.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="z5q-51-jba" id="Nza-JL-p0d">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cia-pn-KLJ">
+                                                    <rect key="frame" x="22" y="6.5" width="30" height="29"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
+                                                    <state key="normal">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="aboutButtonPressed" destination="gnX-px-AUa" eventType="touchUpInside" id="WGs-Yf-CoR"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eGG-Pd-80z">
+                                                    <rect key="frame" x="55" y="6.5" width="310" height="29"/>
+                                                    <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="15"/>
+                                                    <state key="normal" title="Follow the Developer">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="aboutButtonPressed" destination="gnX-px-AUa" eventType="touchUpInside" id="TLf-da-ioU"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="eGG-Pd-80z" firstAttribute="leading" secondItem="Nza-JL-p0d" secondAttribute="leadingMargin" constant="39" id="MaD-HJ-m3w"/>
+                                                <constraint firstItem="eGG-Pd-80z" firstAttribute="centerY" secondItem="Nza-JL-p0d" secondAttribute="centerY" id="dni-hC-uuC"/>
+                                                <constraint firstItem="eGG-Pd-80z" firstAttribute="centerX" secondItem="Nza-JL-p0d" secondAttribute="centerX" constant="22.5" id="kqL-lS-tBd"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -286,8 +370,8 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="Share" footerTitle="© 2018 Factly" id="dQ3-kp-XqP" userLabel="Share">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="oja-J2-GH3">
-                                        <rect key="frame" x="0.0" y="251" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" id="oja-J2-GH3">
+                                        <rect key="frame" x="0.0" y="395" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oja-J2-GH3" id="unO-Gn-mdl">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -325,8 +409,8 @@
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="separatorInset" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="dtP-OV-U0q">
-                                        <rect key="frame" x="0.0" y="295" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" id="dtP-OV-U0q">
+                                        <rect key="frame" x="0.0" y="439" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dtP-OV-U0q" id="BNr-dE-6Al">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -364,8 +448,8 @@
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="separatorInset" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="ALA-VF-8Gg">
-                                        <rect key="frame" x="0.0" y="339" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" id="ALA-VF-8Gg">
+                                        <rect key="frame" x="0.0" y="483" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ALA-VF-8Gg" id="Tbg-xA-jGE">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -403,8 +487,8 @@
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="separatorInset" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="XFv-VB-9Mr">
-                                        <rect key="frame" x="0.0" y="383" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" id="XFv-VB-9Mr">
+                                        <rect key="frame" x="0.0" y="527" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XFv-VB-9Mr" id="Q8E-4h-KB1">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -459,12 +543,15 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="aboutButton" destination="u27-4r-OeZ" id="F9R-zx-e6p"/>
+                        <outlet property="aboutButtonIcon" destination="EHb-gl-6tT" id="aF0-KE-Xec"/>
                         <outlet property="backButton" destination="tiv-rf-nbW" id="TvR-V1-SiO"/>
                         <outlet property="facebookButtonIcon" destination="pUE-Fw-cm8" id="ULt-Ny-dGG"/>
+                        <outlet property="followDeveloperButtonIcon" destination="Cia-pn-KLJ" id="MFl-XE-15l"/>
                         <outlet property="instagramButtonIcon" destination="ZgI-7t-cXO" id="Afs-42-fcH"/>
-                        <outlet property="learnableiOSAppButtonIcon" destination="EHb-gl-6tT" id="3M7-5Z-OoV"/>
-                        <outlet property="reviewButtonIcon" destination="Arm-Lp-khU" id="1KM-sR-xnF"/>
-                        <outlet property="sendFeedbackButtonIcon" destination="HMD-ag-lxR" id="q4c-oS-Sup"/>
+                        <outlet property="learnableiOSAppButtonIcon" destination="b0U-oU-VbF" id="cH1-3p-5uN"/>
+                        <outlet property="reviewButtonIcon" destination="hEL-nJ-aT6" id="fnb-qZ-aZ1"/>
+                        <outlet property="sendFeedbackButtonIcon" destination="Oa7-KA-lxZ" id="u1J-X6-rQR"/>
                         <outlet property="shareButtonIcon" destination="3KQ-yt-QxS" id="Uyg-wl-yzQ"/>
                         <outlet property="twitterButtonIcon" destination="qfR-RH-fsA" id="wtH-lK-wep"/>
                     </connections>
