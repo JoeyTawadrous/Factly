@@ -1,9 +1,22 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="GothamProBold.ttf">
+            <string>GothamPro-Bold</string>
+        </array>
+        <array key="GothamProMedium.ttf">
+            <string>GothamPro-Medium</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -16,7 +29,31 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn a new fact every day" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HvK-Es-DOA">
+                                <rect key="frame" x="55" y="269" width="265" height="145"/>
+                                <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Factly" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sTF-uK-niU">
+                                <rect key="frame" x="55" y="252" width="265" height="36"/>
+                                <fontDescription key="fontDescription" name="GothamPro-Bold" family="Gotham Pro" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.41568627450980389" green="0.4392156862745098" blue="0.83921568627450982" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="sTF-uK-niU" firstAttribute="leading" secondItem="HvK-Es-DOA" secondAttribute="leading" id="7yu-WW-alw"/>
+                            <constraint firstItem="sTF-uK-niU" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Gxw-lm-I39"/>
+                            <constraint firstItem="sTF-uK-niU" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="232" id="LEu-pW-dZN"/>
+                            <constraint firstItem="sTF-uK-niU" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="39" id="RgR-CQ-9WI"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="sTF-uK-niU" secondAttribute="bottom" constant="379" id="bbD-I1-ALa"/>
+                            <constraint firstItem="sTF-uK-niU" firstAttribute="trailing" secondItem="HvK-Es-DOA" secondAttribute="trailing" id="cAA-pv-JbC"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="HvK-Es-DOA" secondAttribute="bottom" constant="253" id="nfG-pp-c3f"/>
+                            <constraint firstItem="HvK-Es-DOA" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="249" id="tPI-dY-WyC"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>

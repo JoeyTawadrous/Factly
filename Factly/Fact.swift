@@ -112,6 +112,8 @@ class Fact: UIViewController {
 		// Decode string
 		question = question.replacingOccurrences(of: "&quot;", with: "", options: .literal, range: nil)
 		answer = answer.replacingOccurrences(of: "&quot;", with: "", options: .literal, range: nil)
+		question = question.replacingOccurrences(of: "&ldquo;", with: "", options: .literal, range: nil)
+		answer = answer.replacingOccurrences(of: "&rdquo;", with: "", options: .literal, range: nil)
 		question = question.removingPercentEncoding!
 		answer = answer.removingPercentEncoding!
 		self.decodedString = (question + "\n\nAnswer: " + answer).decode
