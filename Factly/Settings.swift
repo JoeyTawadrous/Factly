@@ -40,7 +40,7 @@ class Settings: UITableViewController, UITextFieldDelegate, MFMailComposeViewCon
 		// Styling
 		Utils.createFontAwesomeBarButton(button: backButton, icon: .arrowLeft, style: .solid)
 		tableView.separatorColor = UIColor.clear
-		aboutButton?.titleLabel?.numberOfLines = 10
+		aboutButton?.titleLabel?.numberOfLines = 15
 	}
 	
 	func setButtonIcon(button: UIButton, icon: String, type: FontAwesomeStyle) {
