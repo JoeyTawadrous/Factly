@@ -197,7 +197,7 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u27-4r-OeZ">
-                                                    <rect key="frame" x="55" y="6.5" width="310" height="29"/>
+                                                    <rect key="frame" x="55" y="6.5" width="300" height="29"/>
                                                     <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="14.5"/>
                                                     <state key="normal">
                                                         <string key="title">I'm a strong believer that knowledge is power. There are so many complex and beautiful things in our universe. Stories have been told, wars have been won, people have been saved, cities have been built. All of this is possible becuase one or many people had the knowledge to make it happen.</string>
@@ -212,7 +212,7 @@
                                             <constraints>
                                                 <constraint firstItem="u27-4r-OeZ" firstAttribute="centerY" secondItem="d1m-pf-dZT" secondAttribute="centerY" id="VPx-Ew-ive"/>
                                                 <constraint firstItem="u27-4r-OeZ" firstAttribute="leading" secondItem="d1m-pf-dZT" secondAttribute="leadingMargin" constant="39" id="rUP-It-jog"/>
-                                                <constraint firstItem="u27-4r-OeZ" firstAttribute="centerX" secondItem="d1m-pf-dZT" secondAttribute="centerX" constant="22.5" id="xoN-cw-C12"/>
+                                                <constraint firstItem="u27-4r-OeZ" firstAttribute="centerX" secondItem="d1m-pf-dZT" secondAttribute="centerX" constant="17.5" id="xoN-cw-C12"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
