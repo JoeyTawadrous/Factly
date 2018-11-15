@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -93,12 +94,19 @@
                                     <action selector="menuButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jVH-de-P00"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ant-6q-BCz">
+                                <rect key="frame" x="16" y="33" width="30" height="30"/>
+                                <connections>
+                                    <action selector="refreshFactButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xJM-VP-t9n"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="QE2-eP-Mkq" firstAttribute="centerX" secondItem="vTK-pM-4DO" secondAttribute="centerX" id="04F-5K-3Iw"/>
                             <constraint firstItem="QE2-eP-Mkq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="5" id="2S4-4J-57n"/>
                             <constraint firstItem="Cqw-aI-qW3" firstAttribute="top" secondItem="vTK-pM-4DO" secondAttribute="bottom" constant="59" id="2bd-G5-NcH"/>
+                            <constraint firstItem="Ant-6q-BCz" firstAttribute="bottom" secondItem="a2H-Q3-0so" secondAttribute="bottom" id="2vE-cT-pKd"/>
                             <constraint firstItem="tbc-O1-IxA" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="4jP-5n-j4I"/>
                             <constraint firstItem="tbc-O1-IxA" firstAttribute="centerX" secondItem="vTK-pM-4DO" secondAttribute="centerX" id="7LO-nk-etP"/>
                             <constraint firstItem="tbc-O1-IxA" firstAttribute="centerX" secondItem="Cqw-aI-qW3" secondAttribute="centerX" id="DgL-bd-2yr"/>
@@ -109,14 +117,18 @@
                             <constraint firstAttribute="trailingMargin" secondItem="1Gk-fx-wKH" secondAttribute="trailing" constant="53" id="YIW-Sx-A52"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FBt-GA-Wzn" secondAttribute="bottom" constant="128" id="Z5y-l1-Ava"/>
                             <constraint firstAttribute="trailing" secondItem="tbc-O1-IxA" secondAttribute="trailing" id="aZx-DB-R3F"/>
+                            <constraint firstItem="Ant-6q-BCz" firstAttribute="firstBaseline" secondItem="a2H-Q3-0so" secondAttribute="firstBaseline" id="bda-zM-m83"/>
                             <constraint firstItem="vTK-pM-4DO" firstAttribute="top" secondItem="a2H-Q3-0so" secondAttribute="bottom" constant="31" id="bhn-yJ-IIP"/>
+                            <constraint firstItem="Ant-6q-BCz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="cq8-4p-L54"/>
                             <constraint firstItem="vTK-pM-4DO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="74" id="iR2-qQ-8K3"/>
                             <constraint firstItem="tbc-O1-IxA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="lKB-dx-2Hp"/>
                             <constraint firstItem="vTK-pM-4DO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="11" id="mWH-X5-ak0"/>
                             <constraint firstItem="1Gk-fx-wKH" firstAttribute="top" secondItem="vTK-pM-4DO" secondAttribute="bottom" constant="59" id="nXa-KM-ig0"/>
                             <constraint firstItem="tbc-O1-IxA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="q7o-g0-8Ms"/>
+                            <constraint firstItem="Ant-6q-BCz" firstAttribute="baseline" secondItem="a2H-Q3-0so" secondAttribute="baseline" id="qVH-Dt-qZD"/>
                             <constraint firstItem="a2H-Q3-0so" firstAttribute="top" secondItem="QE2-eP-Mkq" secondAttribute="top" constant="8" id="sJI-In-QJh"/>
                             <constraint firstItem="vTK-pM-4DO" firstAttribute="top" secondItem="QE2-eP-Mkq" secondAttribute="bottom" constant="23" id="svB-72-BjQ"/>
+                            <constraint firstItem="Ant-6q-BCz" firstAttribute="top" secondItem="a2H-Q3-0so" secondAttribute="top" id="tps-8F-NsS"/>
                             <constraint firstItem="FBt-GA-Wzn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="52" id="uax-ZX-vQl"/>
                             <constraint firstItem="a2H-Q3-0so" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="v1z-Pl-5k9"/>
                         </constraints>
@@ -127,6 +139,7 @@
                         <outlet property="facebookButton" destination="Cqw-aI-qW3" id="yss-SX-p4g"/>
                         <outlet property="menuButton" destination="a2H-Q3-0so" id="2kA-Nx-vLi"/>
                         <outlet property="questionAndAnswerLabel" destination="vTK-pM-4DO" id="iHZ-yF-B3r"/>
+                        <outlet property="refreshFactButton" destination="Ant-6q-BCz" id="6fL-7l-zG4"/>
                         <outlet property="shareButton" destination="1Gk-fx-wKH" id="SVh-HR-FsS"/>
                         <outlet property="twitterButton" destination="FBt-GA-Wzn" id="x8Y-hU-9vL"/>
                     </connections>

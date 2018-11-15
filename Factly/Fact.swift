@@ -9,6 +9,7 @@ class Fact: UIViewController {
 	@IBOutlet var facebookButton: RoundButton?
 	@IBOutlet var twitterButton: RoundButton?
 	@IBOutlet var shareButton: RoundButton?
+	@IBOutlet var refreshFactButton: UIButton!
 	@IBOutlet var menuButton: UIButton!
 	
 	
@@ -23,6 +24,8 @@ class Fact: UIViewController {
 		// Styling
 		menuButton.titleLabel?.font = UIFont.fontAwesome(ofSize: 21, style: .solid)
 		menuButton.setTitle(String.fontAwesomeIcon(name: .bars), for: .normal)
+		refreshFactButton.titleLabel?.font = UIFont.fontAwesome(ofSize: 21, style: .solid)
+		refreshFactButton.setTitle(String.fontAwesomeIcon(name: .redo), for: .normal)
 		
 		
 		// Gray bg view
@@ -39,6 +42,7 @@ class Fact: UIViewController {
 		
 		
 		// Bring views to front
+		self.view.bringSubview(toFront: refreshFactButton!)
 		self.view.bringSubview(toFront: menuButton!)
 		self.view.bringSubview(toFront: questionAndAnswerLabel!)
 		self.view.bringSubview(toFront: appNameLabel!)
@@ -84,6 +88,11 @@ class Fact: UIViewController {
 	
 	/* MARK: Button Actions
 	/////////////////////////////////////////// */
+	@IBAction func refreshFactButtonPressed(_ sender: AnyObject) {
+		AppDelegate.pullFact()
+		updateFact()
+	}
+	
 	@IBAction func menuButtonPressed(_ sender: AnyObject) {
 		Utils.presentView(self, viewName: Constants.Views.SETTINGS_NAV_CONTROLLER)
 	}

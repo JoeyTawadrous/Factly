@@ -45,7 +45,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	func applicationDidBecomeActive(_ application: UIApplication) {
 		NotificationCenter.default.post(name: Notification.Name(rawValue: "FactlyShouldRefresh"), object: self)
 	
-		setupNotifications()
+		AppDelegate.setupNotifications()
 		
 		let date = Date()
 		let formatter = DateFormatter()
@@ -53,7 +53,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		let todaysDate = formatter.string(from: date)
 	
 		if UserDefaults.standard.string(forKey: Constants.LocalNotifications.LAST_FACT_DATE) == nil {
-			pullFact()
+			AppDelegate.pullFact()
 			UserDefaults.standard.set(todaysDate, forKey: Constants.LocalNotifications.LAST_FACT_DATE)
 		}
 		else {
@@ -61,7 +61,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 			
 			// Check if 24 hours have passed since the last fact was pulled
 			if formatter.date(from: lastFactDate!)! < formatter.date(from: todaysDate)! {
-				pullFact()
+				AppDelegate.pullFact()
 				UserDefaults.standard.set(todaysDate, forKey: Constants.LocalNotifications.LAST_FACT_DATE)
 			}
 		}
@@ -75,7 +75,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	
 	/* MARK: Core Functionality
 	/////////////////////////////////////////// */
-	func pullFact() {
+	class func pullFact() {
 		let url = "https://opentdb.com/api.php?amount=1&type=multiple"
 		Utils.getFact(url, callback: {(params: String, urlContents: String) -> Void in
 			if urlContents.characters.count > 5 {
@@ -88,13 +88,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 					UserDefaults.standard.set(question, forKey: Constants.Defaults.LATEST_FACT_QUESTION)
 					UserDefaults.standard.set(answer, forKey: Constants.Defaults.LATEST_FACT_ANSWER)
 					
-					self.setupNotifications()
+					AppDelegate.setupNotifications()
 				})
 			}
 		})
 	}
 	
-	func setupNotifications() {
+	class func setupNotifications() {
 		// if I have a fact -> add that in the alert!
 		var notificationAlertBody = Constants.Strings.NOTIFICATION
 		if UserDefaults.standard.string(forKey: Constants.Defaults.LATEST_FACT_QUESTION) != nil {
