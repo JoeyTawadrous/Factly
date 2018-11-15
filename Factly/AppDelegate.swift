@@ -13,28 +13,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		
 		// Styling
 		UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor : UIColor(hex: Constants.Colors.PURPLE_DARK)]
-	
-		// Local notifications
-		let viewFactAction = UIMutableUserNotificationAction()
-		viewFactAction.identifier = Constants.LocalNotifications.VIEW_FACT_ACTION_IDENTIFIER
-		viewFactAction.title = Constants.LocalNotifications.VIEW_FACT_ACTION_TITLE
-		viewFactAction.activationMode = .foreground          // don't bring app to foreground
-		viewFactAction.isAuthenticationRequired = false      // don't require unlocking before performing action
-	
-		let actionCategory = UIMutableUserNotificationCategory()
-		actionCategory.identifier = Constants.LocalNotifications.ACTION_CATEGORY_IDENTIFIER
-		actionCategory.setActions([viewFactAction], for: .default)     // 4 actions max
-		actionCategory.setActions([viewFactAction], for: .minimal)     // for when space is limited - 2 actions max
-		
-		application.registerUserNotificationSettings(UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: NSSet(array: [actionCategory]) as? Set<UIUserNotificationCategory>))
 		
 		return true
 	}
 
 	func application(_ application: UIApplication, handleActionWithIdentifier identifier: String?, for notification: UILocalNotification, completionHandler: @escaping () -> Void) {
-		
 		Utils.setRootViewController(viewName: Constants.Views.FACT)
-		
 		completionHandler() // per developer documentation, app will terminate if we fail to call this
 	}
 	
@@ -45,7 +29,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	func applicationDidBecomeActive(_ application: UIApplication) {
 		NotificationCenter.default.post(name: Notification.Name(rawValue: "FactlyShouldRefresh"), object: self)
 	
-		AppDelegate.setupNotifications()
+		Utils.setupLocalNotifications(application: application)
+		Utils.scheduleLocalNotification()
 		
 		let date = Date()
 		let formatter = DateFormatter()
@@ -88,28 +73,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 					UserDefaults.standard.set(question, forKey: Constants.Defaults.LATEST_FACT_QUESTION)
 					UserDefaults.standard.set(answer, forKey: Constants.Defaults.LATEST_FACT_ANSWER)
 					
-					AppDelegate.setupNotifications()
+					Utils.scheduleLocalNotification()
 				})
 			}
 		})
-	}
-	
-	class func setupNotifications() {
-		// if I have a fact -> add that in the alert!
-		var notificationAlertBody = Constants.Strings.NOTIFICATION
-		if UserDefaults.standard.string(forKey: Constants.Defaults.LATEST_FACT_QUESTION) != nil {
-			notificationAlertBody = UserDefaults.standard.string(forKey: Constants.Defaults.LATEST_FACT_QUESTION)!
-		}
-		
-		// Schedule repeating notification
-		let notification = UILocalNotification()
-		notification.alertBody = notificationAlertBody
-		notification.alertAction = Constants.LocalNotifications.VIEW_FACT_ACTION_TITLE // text that is displayed after "slide to..." on the lock screen - defaults to "slide to view"
-		notification.fireDate = NSDate() as Date  // right now (when notification will be fired)
-		notification.soundName = UILocalNotificationDefaultSoundName
-		notification.repeatInterval = NSCalendar.Unit.day
-		notification.category = Constants.LocalNotifications.ACTION_CATEGORY_IDENTIFIER
-		UIApplication.shared.scheduleLocalNotification(notification)
 	}
 }
 
