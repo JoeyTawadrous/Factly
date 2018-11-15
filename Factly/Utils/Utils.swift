@@ -52,7 +52,6 @@ class Utils {
 		notification.repeatInterval = NSCalendar.Unit.day
 		notification.category = Constants.LocalNotifications.ACTION_CATEGORY_IDENTIFIER
 		UIApplication.shared.scheduleLocalNotification(notification)
-		UIApplication.shared.presentLocalNotificationNow(notification)
 	}
 	
 	
