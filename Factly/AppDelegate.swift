@@ -102,19 +102,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		}
 		
 		// Schedule repeating notification
-		if UserDefaults.standard.string(forKey: Constants.LocalNotifications.SCHEDULED_DAILY_NOTIFICATION) == nil {
-			let notification = UILocalNotification()
-			notification.alertBody = notificationAlertBody
-			notification.alertAction = Constants.LocalNotifications.VIEW_FACT_ACTION_TITLE // text that is displayed after "slide to..." on the lock screen - defaults to "slide to view"
-			notification.fireDate = NSDate() as Date  // right now (when notification will be fired)
-			notification.soundName = UILocalNotificationDefaultSoundName
-			notification.repeatInterval = NSCalendar.Unit.day
-			notification.category = Constants.LocalNotifications.ACTION_CATEGORY_IDENTIFIER
-			UIApplication.shared.scheduleLocalNotification(notification)
-			
-			// Set constant so the daily notification will never be rescheduled
-			UserDefaults.standard.set("set", forKey: Constants.LocalNotifications.SCHEDULED_DAILY_NOTIFICATION)
-		}
+		let notification = UILocalNotification()
+		notification.alertBody = notificationAlertBody
+		notification.alertAction = Constants.LocalNotifications.VIEW_FACT_ACTION_TITLE // text that is displayed after "slide to..." on the lock screen - defaults to "slide to view"
+		notification.fireDate = NSDate() as Date  // right now (when notification will be fired)
+		notification.soundName = UILocalNotificationDefaultSoundName
+		notification.repeatInterval = NSCalendar.Unit.day
+		notification.category = Constants.LocalNotifications.ACTION_CATEGORY_IDENTIFIER
+		UIApplication.shared.scheduleLocalNotification(notification)
 	}
 }
 

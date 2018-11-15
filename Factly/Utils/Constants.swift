@@ -25,7 +25,6 @@ class Constants {
 	struct LocalNotifications {
 		static let ACTION_CATEGORY_IDENTIFIER = "ActionCategory"
 		static let LAST_FACT_DATE = "lastFactDate"
-		static let SCHEDULED_DAILY_NOTIFICATION = "scheduledDailyNotification"
 		static let VIEW_FACT_ACTION_IDENTIFIER = "ViewFactAction"
 		static let VIEW_FACT_ACTION_TITLE = "View Fact"
 	}
