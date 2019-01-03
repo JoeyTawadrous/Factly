@@ -72,8 +72,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 					
 					UserDefaults.standard.set(question, forKey: Constants.Defaults.LATEST_FACT_QUESTION)
 					UserDefaults.standard.set(answer, forKey: Constants.Defaults.LATEST_FACT_ANSWER)
-					
-					Utils.scheduleLocalNotification()
 				})
 			}
 		})

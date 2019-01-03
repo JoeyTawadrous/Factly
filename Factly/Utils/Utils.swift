@@ -37,6 +37,9 @@ class Utils {
 	}
 	
 	class func scheduleLocalNotification() {
+		// Cancel all previous notifications
+		UIApplication.shared.cancelAllLocalNotifications()
+		
 		// if I have a fact -> add that in the alert!
 		var notificationAlertBody = Constants.Strings.NOTIFICATION
 		if UserDefaults.standard.string(forKey: Constants.Defaults.LATEST_FACT_QUESTION) != nil {
@@ -51,6 +54,7 @@ class Utils {
 		notification.soundName = UILocalNotificationDefaultSoundName
 		notification.repeatInterval = NSCalendar.Unit.day
 		notification.category = Constants.LocalNotifications.ACTION_CATEGORY_IDENTIFIER
+		
 		UIApplication.shared.scheduleLocalNotification(notification)
 	}
 	
