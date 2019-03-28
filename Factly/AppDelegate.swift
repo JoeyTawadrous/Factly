@@ -67,8 +67,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 				DispatchQueue.main.async(execute: {
 					// Get data
 					let result = (urlContents.parseJSONString.value(forKey: "results")! as! NSArray)[0] as! NSDictionary
-					let question = result.value(forKey: "question")! as! String
-					let answer = result.value(forKey: "correct_answer")! as! String
+					var question = result.value(forKey: "question")! as! String
+					var answer = result.value(forKey: "correct_answer")! as! String
+					question = question.replacingOccurrences(of: "&quot;", with: "", options: .literal, range: nil)
+					answer = answer.replacingOccurrences(of: "&quot;", with: "", options: .literal, range: nil)
+					question = question.replacingOccurrences(of: "&ldquo;", with: "", options: .literal, range: nil)
+					answer = answer.replacingOccurrences(of: "&rdquo;", with: "", options: .literal, range: nil)
+					question = question.removingPercentEncoding!
+					answer = answer.removingPercentEncoding!
 					
 					UserDefaults.standard.set(question, forKey: Constants.Defaults.LATEST_FACT_QUESTION)
 					UserDefaults.standard.set(answer, forKey: Constants.Defaults.LATEST_FACT_ANSWER)

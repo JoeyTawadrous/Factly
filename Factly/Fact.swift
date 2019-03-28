@@ -115,16 +115,10 @@ class Fact: UIViewController {
 	/////////////////////////////////////////// */
 	func updateFact() {
 		// Get data
-		var question = UserDefaults.standard.string(forKey: Constants.Defaults.LATEST_FACT_QUESTION)! as String
-		var answer = UserDefaults.standard.string(forKey: Constants.Defaults.LATEST_FACT_ANSWER)! as String
+		let question = UserDefaults.standard.string(forKey: Constants.Defaults.LATEST_FACT_QUESTION)! as String
+		let answer = UserDefaults.standard.string(forKey: Constants.Defaults.LATEST_FACT_ANSWER)! as String
 		
 		// Decode string
-		question = question.replacingOccurrences(of: "&quot;", with: "", options: .literal, range: nil)
-		answer = answer.replacingOccurrences(of: "&quot;", with: "", options: .literal, range: nil)
-		question = question.replacingOccurrences(of: "&ldquo;", with: "", options: .literal, range: nil)
-		answer = answer.replacingOccurrences(of: "&rdquo;", with: "", options: .literal, range: nil)
-		question = question.removingPercentEncoding!
-		answer = answer.removingPercentEncoding!
 		self.decodedString = (question + "\n\nAnswer: " + answer).decode
 		questionAndAnswerLabel?.text = self.decodedString
 		
