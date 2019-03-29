@@ -83,7 +83,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Factly" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QE2-eP-Mkq">
                                 <rect key="frame" x="97" y="25" width="181" height="46"/>
                                 <fontDescription key="fontDescription" name="GothamPro-Bold" family="Gotham Pro" pointSize="23"/>
-                                <color key="textColor" red="0.41568627450980389" green="0.4392156862745098" blue="0.83921568627450982" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.26666666666666666" green="0.66666666666666663" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2H-Q3-0so">
@@ -172,7 +172,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="TEU-4h-F22">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.41568627450980389" green="0.4392156862745098" blue="0.83921568627450982" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.26666666666666666" green="0.66666666666666663" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
                         <sections>
                             <tableViewSection headerTitle="About Factly" id="1Tj-Mh-vAi">
                                 <cells>
@@ -184,7 +184,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u27-4r-OeZ">
-                                                    <rect key="frame" x="16" y="8" width="339" height="29"/>
+                                                    <rect key="frame" x="16" y="7.5" width="339" height="29"/>
                                                     <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="14.5"/>
                                                     <state key="normal">
                                                         <string key="title">I'm a strong believer that knowledge is power. There are so many complex and beautiful things in our universe. Stories have been told, wars have been won, people have been saved, cities have been built. All of this is possible becuase one or many people had the knowledge to make it happen.</string>
@@ -536,7 +536,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Settings" leftItemsSupplementBackButton="YES" id="MZt-Ru-xlO">
                         <barButtonItem key="leftBarButtonItem" id="tiv-rf-nbW">
-                            <color key="tintColor" red="0.41568627450980389" green="0.4392156862745098" blue="0.83921568627450982" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" red="0.26666666666666666" green="0.66666666666666663" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="backButtonPressed" destination="gnX-px-AUa" id="xoc-g0-Seq"/>
                             </connections>

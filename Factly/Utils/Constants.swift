@@ -1,7 +1,7 @@
 class Constants {
 	
 	struct Colors {
-		static let PURPLE_DARK = "6A70D6"
+		static let BLUE_DARK = "44AAFC"
 	}
 	
 	
@@ -51,7 +51,7 @@ class Constants {
 		
 		
 		// Share
-		static let SHARE = "Check out " + Constants.Core.APP_NAME + " on the App Store,where you can learn a new fact 365 days a year. #Factly #iOS \n\nDownload for free now: " + Constants.Strings.LINK_IOS_STORE
+		static let SHARE = "Check out " + Constants.Core.APP_NAME + " on the App Store, where you can learn a new fact 365 days a year. #Factly #iOS \n\nDownload for free now: " + Constants.Strings.LINK_IOS_STORE
 	}
 	
 	struct Views {

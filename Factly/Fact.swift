@@ -61,7 +61,7 @@ class Fact: UIViewController {
 	
 	override func viewWillLayoutSubviews() {
 		// Get & set random picture bg
-		let pictures = ["fire", "mountain", "mountains", "night", "night_house", "snow", "watch"]
+		let pictures = ["australia", "canada", "fire", "forest", "iceland", "italy", "mountain", "mountains", "night", "night_house", "snow", "switzerland"]
 		let randomPic = pictures[Int(arc4random_uniform(UInt32(pictures.count)))]
 		bgImageView?.image = UIImage(named: randomPic)
 	}
