@@ -35,8 +35,7 @@ class Constants {
 		
 		// Links
 		static let LINK_APP_REVIEW = "itms-apps://itunes.apple.com/app/apple-store/id" + Core.APP_ID + "?action=write-review"
-		static let LINK_FACEBOOK = "https://www.facebook.com/getlearnable"
-		static let LINK_INSTAGRAM = "https://www.instagram.com/learnableapp"
+		static let LINK_INSTAGRAM = "https://www.instagram.com/joeytawadrous"
 		static let LINK_IOS_STORE = "https://itunes.apple.com/us/app/factly-daily-random-facts/id1200288775?mt=8"
 		static let LINK_LEARNABLE_IOS_STORE = "https://itunes.apple.com/gb/app/learnable-learn-to-code-from-scratch-level-up/id1254862243?mt=8"
 		static let LINK_TWITTER = "https://twitter.com/getlearnable"
